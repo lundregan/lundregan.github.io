@@ -1,3 +1,19 @@
+.intro {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+    color:rgba(255, 255, 255, 0.822);
+    background-color: #1A1A1D;
+}
+
+.intro .profile-icon {
+    margin-bottom: 30px;
+}
+
+.intro a {
+    margin-top: 80px;
+}
+
 .brand-title {
     font-size: 1.5rem;
 }
