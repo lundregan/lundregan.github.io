@@ -1,3 +1,7 @@
+body {
+    background-color: #1A1A1D;
+}
+
 .intro {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -12,6 +16,17 @@
 
 .intro a {
     margin-top: 80px;
+}
+
+.about {
+    background-color: #1A1A1D;
+    color: white;
+
+    padding: 100px;
+}
+
+.skill {
+    margin: 30px;
 }
 
 .contact {
