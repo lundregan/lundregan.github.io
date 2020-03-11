@@ -1,59 +1,139 @@
-body {
-    background-color: #1A1A1D;
+/* 
+Layout Example Guide
+
+margin-top:     0px;
+margin-bottom:  0px;
+
+padding-left:   0px;
+padding-right:  0px;
+
+border:         0px solid black;
+border-radius:  50%;
+
+text-align:     center;
+
+color:              #AD46DF;
+background-color:   #1A2D45;
+
+
+Colors
+*/
+
+/* CSS VARIABLES */
+:root {
+    /* HTML */
+    --body-bg:      #1A1A1D;
+
+
+
+    /* Navigation */
+    --nav-bg:       #1A1A1D;
+    --nav-border:   #000000;
+    --nav-brand:    #00FF00;
+    
+
+
+    /* Sections */
+    --intro-bg:     #1A1A1D;
+    --intro-text:   #FFFFFF;
+
+    --about-bg:     #1A1A1D;
+    --about-text:   #FFFFFF;
+
+    --contact-bg:   #1A1A1D;
+    --contact-text: #FFFFFF;
+
+
+
+    /* Footer */
+    --footer-bg:    #212529;
+    --footer-text:  #FFFFFF;
 }
 
-.intro {
-    padding-top: 30px;
+
+
+/* ELEMENTS */
+body {
+    background-color: var(--body-bg);
+}
+
+
+
+/* NAVBAR */
+nav {
+    border-bottom: 1px solid var(--nav-border);
+    
+    background-color: var(--nav-bg);
+}
+
+.brand-title {
+    font-size: 1.5rem;
+}
+
+.brand-subtitle {
+    font-size: 0.8rem;
+
+    color: var(--nav-brand);
+}
+
+
+
+/* INTRO Section*/
+#intro-section {
+    padding-top:    30px;
     padding-bottom: 30px;
     
-    color:rgba(255, 255, 255, 0.822);
-    background-color: #1A1A1D;
+    color:              var(--intro-text);
+    background-color:   var(--intro-bg);
 }
 
-.intro .profile-icon {
-    margin-bottom: 30px;
+#intro-section i {
+    margin-top:     30px;
+    margin-bottom:  30px;
 }
 
-.intro a {
-    margin-top: 80px;
+#intro-section a {
+    margin-top:     80px;
 }
 
+
+
+/* ABOUT Section*/
 .about {
-    background-color: #1A1A1D;
-    color: white;
-
     padding: 100px;
+
+    color:              var(--about-text);
+    background-color:   var(--about-bg);
 }
 
 .skill {
     margin: 30px;
 }
 
+
+
+/* CONTACT Section*/
 .contact {
-    background-color: #1A1A1D;
-    color: white;
-
     padding: 50px;
+
+    color:              var(--contact-text);
+    background-color:   var(--contact-bg);
 }
 
-.brand-title {
-    font-size: 1.5rem;
-}
-.brand-subtitle {
-    font-size: 0.8rem;
-    color: gray;
-}
 
+
+/* FOOTER */
 .footer {
     margin-top: 20px;
 
-    padding: 20px;
-
-    color: white;
-    background: #212529;
+    padding:    20px;
 
     text-align: center;
+
+    color:      var(--footer-text);
+    background: var(--footer-bg);
 }
+
 .footer-contact ul {
 
     list-style-type: none;
