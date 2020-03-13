@@ -106,8 +106,18 @@ nav {
     background-color:   var(--about-bg);
 }
 
+.about-skills row {
+    margin-bottom: 50px;
+}
+
 .skill {
     margin: 30px;
+    margin-bottom: 100px;
+}
+
+.skill ul {
+    list-style: none;
+    padding: 0px;
 }
 
 
