@@ -143,7 +143,7 @@ nav {
 }
 
 .skill i {
-    font-size: 30vh;
+    font-size: calc((30vh + 20vw) / 2);
 }
 
 #skill-html h2, #skill-html i {
