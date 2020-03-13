@@ -43,6 +43,14 @@ Colors
     --contact-bg:   #1A1A1D;
     --contact-text: #FFFFFF;
 
+    /* Skill Colors */
+    --skill-color-html:         #DE4B25;
+    --skill-color-css:          #254BDE;
+    --skill-color-javascript:   #E0C22E;
+    --skill-color-python:       #356C9C;
+    --skill-color-csharp:       #652077;
+    --skill-color-git:          #E94E32;
+    --skill-color-sql:          #006FC0;
 
 
     /* Footer */
@@ -120,6 +128,33 @@ nav {
     padding: 0px;
 }
 
+#skill-html h2, #skill-html i {
+    color: var(--skill-color-html);
+}
+
+#skill-css h2, #skill-css i {
+    color: var(--skill-color-css);
+}
+
+#skill-javascript h2, #skill-javascript i {
+    color: var(--skill-color-javascript);
+}
+
+#skill-python h2, #skill-python i {
+    color: var(--skill-color-python);
+}
+
+#skill-csharp h2, #skill-csharp i {
+    color: var(--skill-color-csharp);
+}
+
+#skill-git h2, #skill-git i {
+    color: var(--skill-color-git);
+}
+
+#skill-sql h2, #skill-sql i {
+    color: var(--skill-color-sql);
+}
 
 
 /* CONTACT Section*/
