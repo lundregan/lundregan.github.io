@@ -109,7 +109,12 @@ nav {
 }
 
 #intro-section a {
-    margin-top:     80px;
+    margin-top:     60px;
+}
+
+#intro-section h2 {
+    margin-top: -10px;
+    margin-bottom: 20px;
 }
 
 
