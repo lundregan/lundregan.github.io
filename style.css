@@ -113,18 +113,18 @@ nav {
 }
 
 #intro-section h2 {
-    margin-top: -10px;
-    margin-bottom: 20px;
+    margin-top:     -10px;
+    margin-bottom:  20px;
 }
 
 
 
 /* ABOUT Section*/
 .about {
-    padding-top: 100px;
-    padding-right: 20%;
+    padding-top:    100px;
+    padding-right:  20%;
     padding-bottom: 100px;
-    padding-left: 20%;
+    padding-left:   20%;
 
     color:              var(--about-text);
     background-color:   var(--about-bg);
@@ -180,10 +180,10 @@ nav {
 
 /* CONTACT Section*/
 .contact {
-    padding-top: 50px;
-    padding-right: 20%;
+    padding-top:    50px;
+    padding-right:  30%;
     padding-bottom: 50px;
-    padding-left: 20%;
+    padding-left:   30%;
 
     color:              var(--contact-text);
     background-color:   var(--contact-bg);
@@ -197,15 +197,21 @@ nav {
     color: var(--contact-available-text);
 }
 
+#contact-form-submit {
+    width: 100%;
+
+    margin-top: 10px;
+}
+
 
 
 /* FOOTER */
 .footer {
 
-    padding-top: 40px;
-    padding-right: 20%;
+    padding-top:    40px;
+    padding-right:  20%;
     padding-bottom: 10px;
-    padding-left: 20%;
+    padding-left:   20%;
 
     text-align: center;
 
