@@ -130,6 +130,11 @@ nav {
     background-color:   var(--about-bg);
 }
 
+.about p {
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
 .about-skills row {
     margin-bottom: 50px;
 }
