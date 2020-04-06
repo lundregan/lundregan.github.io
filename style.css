@@ -207,6 +207,15 @@ nav {
     background-color:   var(--contact-bg);
 }
 
+@media only screen and (max-width: 600px) {
+    .contact {
+        padding-top:    50px;
+        padding-right:  0%;
+        padding-bottom: 50px;
+        padding-left:   0%;
+    }
+  }
+
 #contact-status-availability {
     margin-bottom: 100px;
 
