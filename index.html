@@ -46,11 +46,12 @@
                         Projects
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Portfolio Website</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Andriod Bullet Hell Game</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Example#3</a>
+                        <a class="dropdown-item" href="https://github.com/lundregan/ChoaticDM" target='_blank'>ChoaticDM</a>
+                        <!--
+                            Divider for when more projects are added
+
+                            <div class="dropdown-divider"></div>
+                        --->
                     </div>
                 </li>
                 <li class="nav-item">
@@ -170,25 +171,25 @@
         </div>
 
         <h1>Contact</h1>
-        <form class="container-fluid">
+        <form class="container-fluid" action="https://formspree.io/xzbvnalp" method="POST">
             <div class="form-group">
                 <div class="row">
                     <div class="col contact-name-col">
                         <label for="name">Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                        <input type="text" class="form-control" id="name" placeholder="Your Name" for="name">
                     </div>
                     <div class="col contact-email-col">
                         <label for="email">Email</label>
-                        <input type="text" class="form-control" id="email" placeholder="Your Email">
+                        <input type="text" class="form-control" id="email" placeholder="Your Email" for="_replyto">
                     </div>
                 </div>
             </div>
             <div class="form-group">
                 <label for="message">Your Message</label>
-                <textarea class="form-control" id="message" rows="6"></textarea>
+                <textarea class="form-control" id="message" rows="6" name="message"></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary" id="contact-form-submit">Submit</button>
+            <button type="submit" class="btn btn-primary" id="contact-form-submit" value="Send">Submit</button>
         </form>
     </section>
 
