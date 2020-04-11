@@ -29,9 +29,10 @@ Colors
 
 
     /* Navigation */
-    --nav-bg:       #1A1A1D;
-    --nav-border:   #000000;
-    --nav-brand:    #00FF00;
+    --nav-bg:           #161618;
+    --nav-border:       #000000;
+    --nav-brand:        #991cff;
+    --navlink-hover:   #930fff;
     
 
 
@@ -103,6 +104,10 @@ nav {
     font-size: 0.8rem;
 
     color: var(--nav-brand);
+}
+
+.nav-link:hover, .dropdown-link:hover{
+    color: var(--navlink-hover) !important;
 }
 
 
