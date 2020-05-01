@@ -67,6 +67,10 @@ Colors
     --footer-text:  #FFFFFF;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* ANIMATIONS */
 .grow {
     transition: all .3s ease-in-out; 
