@@ -1,0 +1,40 @@
+#project-section {
+    padding-bottom: 20px;
+
+    background: #1A1A1D;
+    color:      white;
+}
+
+.project-name {
+    padding: 20px 0 10px 0;
+}
+
+.project-img {
+    margin-bottom: 20px;
+    
+    width: 50vw;
+}
+
+.description {
+    margin: 0 10% 0 10%;
+
+    padding-bottom: 20px;
+
+    font-size: 1rem;
+}
+
+.description-updates {
+    padding-bottom: 20px;
+    
+    font-size: 1rem;
+}
+
+.update-list {
+    padding: 0;
+
+    display: inline-block;
+
+    text-align: center;
+
+    list-style-type: upper-roman;
+}
