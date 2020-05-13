@@ -38,3 +38,7 @@
 
     list-style-type: upper-roman;
 }
+
+.update-list li {
+    padding-left: 10px;
+}
