@@ -23,7 +23,26 @@
     </section>
 
     <section id='projects-section'>
-      <!-- List of my porjects will go here -->
+      <h1>Projects</h1>
+
+      <div id='projects'>
+        <div class="project">
+          <g-image class='project-image' src='~/assets/images/projects/hexoggle.png'></g-image>
+          <div class='project-description'>
+            <h3>Hexoggle</h3>
+
+            <p>
+              Hexagon based puzzle game where you toggle hexagons to turn the whole board from red to green.
+              Built with vue as a learning project.
+            </p>
+
+            <div class='project-links'>
+              <a href="" class="link">Github</a><br />
+              <a href="" class="link">Play on Netlify</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
   </Layout>
@@ -67,6 +86,24 @@ export default {
 #view-projects-button:hover {
   animation: button-grow 2s;
 }
+
+#projects-section {
+  text-align: center;
+}
+
+#projects {
+  display: flex;
+  justify-content: space-around;
+}
+
+.project {
+  display: flex;
+}
+
+.project-image {
+  max-width: 50vw;
+}
+
 
 .home-links a {
   margin-right: 1rem;
