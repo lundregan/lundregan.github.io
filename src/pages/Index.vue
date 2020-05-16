@@ -1,9 +1,6 @@
 <template>
   <Layout>
 
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
-
     <section id='intro-section'>
       <h1 id='intro-name'>Ethan Lundregan</h1>
       <h2 id='intro-position'>Junior Developer</h2>
