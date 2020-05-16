@@ -12,9 +12,14 @@
         Computing Is My Dame
       </p>
 
-      <a href="https://github.com/lundregan" target="_blank" rel='noopener'>
-        <button id='view-projects-button'>View My Projects on Github</button>
-      </a>
+      <div>
+        <a href="https://github.com/lundregan" target="_blank" rel='noopener'>
+          <button id='view-projects-button'>View My Projects</button>
+        </a>
+        <a href="https://github.com/lundregan" target="_blank" rel='noopener'>
+          <button id='view-projects-button'>View My Github</button>
+        </a>
+      </div>
     </section>
 
     <section id='projects-section'>
@@ -50,7 +55,7 @@ export default {
 }
 
 #view-projects-button {
-  margin-top: 20px;
+  margin: 20px 15px 0 15px;
 
   padding: 10px;
 
