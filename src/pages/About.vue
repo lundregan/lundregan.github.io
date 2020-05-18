@@ -9,24 +9,23 @@
     </p>
 
     <h2>Skills</h2>
-
+    
     <ul>
-      <li>HTML, CSS, JavaScript</li>
-      <li>Github / Git</li>
-      <li>Vue (gridsome)</li>
-      <li>Bootstrap</li>
-      <li>Python - Pygame</li>
-      <li>Figma</li>
-      <li>Node.js</li>
-      <li>SQL</li>
-      <li>Json</li>
-      
+      <li v-for="skill in about.skills" :key='skill'>{{skill}}</li>      
     </ul>
   </Layout>
 </template>
 
 <script>
+import about from '@/data/about.yml'
+
 export default {
+  data(){
+    return {
+      about
+    }
+  },
+  
   metaInfo: {
     title: 'About us'
   }
