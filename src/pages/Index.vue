@@ -36,9 +36,16 @@
               Built with vue as a learning project.
             </p>
 
-            <div class='project-links'>
-              <a href="" class="link">Github</a><br />
-              <a href="" class="link">Play on Netlify</a>
+            <div class='project-links'>                
+                <button class='project-link-button'>
+                  <p>Play on Netlify</p>
+                  <img src="../assets/images/logos/netlify-logo.png" alt="" class="project-link-image"> 
+                </button>
+
+                <button class='project-link-button'>
+                  <p>View Code on Github</p>
+                  <img src="../assets/images/logos/github-logo.png" alt="" class="project-link-image"> 
+                </button>
             </div>
           </div>
         </div>
@@ -83,6 +90,7 @@ export default {
   border: none;
   border-radius: 10px;
 }
+
 #view-projects-button:hover {
   animation: button-grow 2s;
 }
@@ -97,11 +105,27 @@ export default {
 }
 
 .project {
+  width: 50vw;
+
+  display: flex;
+}
+
+.project-links {
   display: flex;
 }
 
 .project-image {
-  max-width: 50vw;
+  width: 50%;
+}
+
+.project-link-button {
+  width: 50%;
+
+  background: grey;
+}
+
+.project-link-image {
+  max-width: 50%;
 }
 
 
