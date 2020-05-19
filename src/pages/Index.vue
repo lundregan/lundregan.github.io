@@ -2,9 +2,9 @@
   <Layout>
 
     <section id='intro-section'>
+      <font-awesome :icon="['fas', 'user-astronaut']" size='6x'/>
       <h1 id='intro-name'>Ethan Lundregan</h1>
       <h2 id='intro-position'>Junior Developer</h2>
-      
       <p>
         Ethan Lundregan Is My Name<br />
         Programming Is My Game<br />
@@ -37,14 +37,14 @@
             </p>
 
             <div class='project-links'>                
-                  <div class='project-link'>
-                    <p>Play on Netlify</p>
-                    <font-awesome :icon="['fas', 'play']"/>
+                  <div class="project-link">
+                    <font-awesome :icon="['fab', 'github']" size='2x'/>
+                    <p>View Code on Github</p>
                   </div>
 
-                  <div class="project-link">
-                    <p>View Code on Github</p>
-                    <font-awesome :icon="['fab', 'github']"/>
+                  <div class='project-link'>
+                    <font-awesome :icon="['fas', 'play']" size='2x'/>
+                    <p>Play on Netlify</p>
                   </div>
             </div>
           </div>
@@ -130,13 +130,16 @@ export default {
   margin: 10px;
   padding: 10px;
 
+  width: 40%;
+
   border-radius: 10px;
 
   background: #303030;
 }
 
+
 .project-image {
-  width: 50%;
+  max-width: 50%;
 }
 
 .project-link-image {
