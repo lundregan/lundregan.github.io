@@ -37,15 +37,15 @@
             </p>
 
             <div class='project-links'>                
-                <button class='project-link-button'>
-                  <p>Play on Netlify</p>
-                  <img src="../assets/images/logos/netlify-logo.png" alt="" class="project-link-image"> 
-                </button>
+                  <div class='project-link'>
+                    <p>Play on Netlify</p>
+                    <font-awesome :icon="['fas', 'play']"/>
+                  </div>
 
-                <button class='project-link-button'>
-                  <p>View Code on Github</p>
-                  <img src="../assets/images/logos/github-logo.png" alt="" class="project-link-image"> 
-                </button>
+                  <div class="project-link">
+                    <p>View Code on Github</p>
+                    <font-awesome :icon="['fab', 'github']"/>
+                  </div>
             </div>
           </div>
         </div>
@@ -65,6 +65,9 @@ export default {
 
 <style>
 #intro-section {
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+
   text-align: center;
 }
 
@@ -96,6 +99,8 @@ export default {
 }
 
 #projects-section {
+  padding-bottom: 20vh;
+
   text-align: center;
 }
 
@@ -105,23 +110,33 @@ export default {
 }
 
 .project {
+  padding: 10px;
+
   width: 50vw;
 
   display: flex;
+
+  border-radius: 10px;
+
+  background: #212121;
 }
 
 .project-links {
   display: flex;
+  justify-content: space-around;
+}
+
+.project-link {
+  margin: 10px;
+  padding: 10px;
+
+  border-radius: 10px;
+
+  background: #303030;
 }
 
 .project-image {
   width: 50%;
-}
-
-.project-link-button {
-  width: 50%;
-
-  background: grey;
 }
 
 .project-link-image {
