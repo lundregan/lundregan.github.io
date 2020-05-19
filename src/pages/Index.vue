@@ -37,15 +37,15 @@
             </p>
 
             <div class='project-links'>                
-                  <div class="project-link">
-                    <font-awesome :icon="['fab', 'github']" size='2x'/>
-                    <p>View Code on Github</p>
-                  </div>
+              <a class='project-link' href='https://github.com/lundregan/hexoggle' target='_blank'>
+                <font-awesome :icon="['fab', 'github']" size='2x'/>
+                <p>View Code on Github</p>
+              </a>
 
-                  <div class='project-link'>
-                    <font-awesome :icon="['fas', 'play']" size='2x'/>
-                    <p>Play on Netlify</p>
-                  </div>
+              <a class='project-link' href='https://hexoggle.netlify.app/' target='_blank'>
+                <font-awesome :icon="['fas', 'play']" size='2x'/>
+                <p>Play on Netlify</p>
+              </a>
             </div>
           </div>
         </div>
@@ -133,8 +133,14 @@ export default {
   width: 40%;
 
   border-radius: 10px;
+  
+  text-decoration: none;
 
   background: #303030;
+}
+
+.project-link p {
+  margin-bottom: 0;
 }
 
 
