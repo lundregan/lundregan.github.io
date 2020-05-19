@@ -75,6 +75,8 @@ p, h1, h2, h3, h4, h5, h6 {
 .brand-positionName {
   margin-top: 10px;
 
+  font-size: 70%;
+
   color: purple;
 }
 
