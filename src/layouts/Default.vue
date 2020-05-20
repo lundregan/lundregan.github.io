@@ -46,7 +46,8 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   
-  max-width: 1080px;  
+  max-width: 1080px;
+  min-height: 100vh;
 }
 
 .header {
