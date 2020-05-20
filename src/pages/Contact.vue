@@ -14,22 +14,35 @@
 
     <section id='contact-section'>
       <h1> Contact me </h1>
-      <form name="contact" method="POST" data-netlify="true">
-        <p>
-          <label>Your Name:</label><br />
-          <input type="text" name="name" />  
-        </p>
-        <p>
-          <label>Your Email:</label><br />
-          <input type="email" name="email" />
-        </p>
-        <p>
-          <label>Message:</label><br />
-          <textarea name="message"></textarea>
-        </p>
-        <p>
-          <button id='submitForm' type="submit">Send</button>
-        </p>
+      <form 
+        name="contact" 
+        method="POST"
+        v-on:submit.prevent="handleSubmit"
+        action="/success/"
+        data-netlify="true"
+        data-netlify-honeypot='bot-sield'
+      >
+
+        <input type='hidden' name='form-name' value='Contact' />
+
+        <div class="sender-info">
+          <div>
+            <label for='name' class='label'>Your Name</label><br />
+            <input type="text" name="name" v-model='formData.name'/>
+          </div>
+
+          <div>
+            <label for='email' class='label'>Your Email</label><br />
+            <input type="email" name="email" v-model='formData.email'/>
+          </div>
+        </div>
+        
+        <div class="message-wrapper">
+          <label for='message' class='label'>Message:</label><br />
+          <textarea name="message" v-model='formData.message'></textarea>
+        </div>
+
+        <button id='submitForm' type="submit">Send Email</button>
       </form>
     </section>
   </Layout>
@@ -45,7 +58,29 @@ export default {
 
   data () {
     return {
-      about
+      about,
+      formData: {}      
+    }
+  },
+
+  methods: {
+    encode(data) {
+      return Object.keys(data)
+        .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+        .join('&')
+    },
+    
+    handleSubmit(e) {
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: this.encode({
+          'form-name': e.target.getAttribute('name'),
+          ...this.formData,
+        }),
+      })
+    .then(() => this.$router.push('/success'))
+    .catch(error => alert(error))
     }
   }
 }
