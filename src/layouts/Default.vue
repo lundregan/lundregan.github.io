@@ -1,20 +1,31 @@
 <template>
   <div class="layout">
-    <header class="header">
-      <strong>
-        <g-link class='brand' to="/">
-          <p class='brand-siteName'> {{ $static.metadata.siteName }} </p>
-          <p class='brand-positionName'> Junior Developer </p>
-        </g-link>
-      </strong>
-      <nav class="nav">
-        <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/about/">About</g-link>
-        <g-link class="nav__link" to="/blog/">Blog</g-link>
-        <g-link class="nav__link" to="/contact/">Contact</g-link>
-      </nav>
-    </header>
-    <slot/>
+    <div class="content-wrapper">
+      <header class="header">
+        <strong>
+          <g-link class='brand' to="/">
+            <p class='brand-siteName'> {{ $static.metadata.siteName }} </p>
+            <p class='brand-positionName'> Junior Developer </p>
+          </g-link>
+        </strong>
+        <nav class="nav">
+          <g-link class="nav__link" to="/">Home</g-link>
+          <g-link class="nav__link" to="/about/">About</g-link>
+          <g-link class="nav__link" to="/blog/">Blog</g-link>
+          <g-link class="nav__link" to="/contact/">Contact</g-link>
+        </nav>
+      </header>
+      <slot/>
+    </div>
+
+    <footer class="footer">
+      <p>
+        Built with
+        <a class="link" href="//gridsome.org">Gridsome</a>
+        & Crafted with 💚 by
+        <a class="link" href="https://github.com/lundregan" target='_blank'>Ethan Lundregan</a>
+      </p> 
+    </footer>
   </div>
 </template>
 
@@ -50,6 +61,9 @@ body {
   max-width: 1080px;
   min-height: 100vh;
 }
+.content-wrapper {
+  min-height: 90vh;
+}
 
 .header {
   margin-bottom: 20px;
@@ -67,6 +81,16 @@ body {
   border-radius: 0 0 10px 10px;
 
   background-color: #212121;
+}
+
+.footer {
+  padding-top: 20px;
+
+  height: 100px;
+
+  text-align: center;
+
+  bottom: 0;
 }
 
 .brand {
