@@ -40,10 +40,6 @@ body {
   background: #121212;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
-  opacity: 87%;
-}
-
 .layout {
   margin: 0 auto;
 
