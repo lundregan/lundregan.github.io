@@ -52,13 +52,20 @@ body {
 
 .header {
   margin-bottom: 20px;
+
+  padding: 0 10px 0 10px;
   
+  width: 100%;
   height: 80px;
 
   display: flex;
 
   justify-content: space-between;
   align-items: center;
+
+  border-radius: 0 0 10px 10px;
+
+  background-color: #212121;
 }
 
 .brand {
