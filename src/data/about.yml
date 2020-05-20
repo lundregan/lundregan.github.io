@@ -1,0 +1,15 @@
+employed: false
+work_status: 'Avaliable'
+learning_status:
+  - Expanding my Vue knowledge with Gridsome
+  - Learning Typescript
+
+skills:
+  - HTML, CSS, JavaScript
+  - Github / Git
+  - Vue
+  - Python
+  - Figma
+  - Node.js
+  - SQL
+  - JSON, YAML
