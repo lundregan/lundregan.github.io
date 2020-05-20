@@ -64,6 +64,10 @@ export default {
 </script>
 
 <style>
+layout {
+  min-height: 100vh;
+}
+
 #intro-section {
   padding-top: 20vh;
   padding-bottom: 20vh;
