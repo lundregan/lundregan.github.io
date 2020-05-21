@@ -1,5 +1,5 @@
 ---
-title: poopsickle
+title: Default blog post
 ---
 
-POspkadp
+some stuff about it
