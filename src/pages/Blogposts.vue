@@ -4,9 +4,11 @@
 
     <div v-for='edge in $page.blog.edges' :key='edge.node.id'>
       
-      <g-link :to='edge.node.path'> {{ edge.node.title }} </g-link>
-      
-      {{ edge.node.title }}
+      <h1 class='title'> {{ edge.node.title }} </h1>
+
+      <p> {{ edge.node.readtime }} min Read </p>
+
+      <g-link :to='edge.node.path'> Read more... </g-link>
     </div>
   </Layout>
 </template>
@@ -17,6 +19,7 @@
       edges {
         node {
           title,
+          readtime,
           path
         }
       }

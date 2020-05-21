@@ -1,5 +1,6 @@
 ---
 title: Introduction To My Blog
+readtime: 3
 ---
 
 ## Why Am I Blogging?
