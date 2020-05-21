@@ -8,7 +8,7 @@
       <p>
         Ethan Lundregan Is My Name<br />
         Programming Is My Game<br />
-        Cheesy Lines Arn't Lame<br />
+        Cheesy Lines Aren't Lame<br />
         Computing Is My Dame
       </p>
 
@@ -33,7 +33,7 @@
 
             <p>
               Hexagon based puzzle game where you toggle hexagons to turn the whole board from red to green.
-              Built with vue as a learning project.
+              Built with Vue as a learning project.
             </p>
 
             <div class='project-links'>                
