@@ -1,5 +1,6 @@
 ---
 title: Introduction To My Blog
+synopsis: Brief introduction to my blog, what and why it is here, and what to expect
 readtime: 3
 ---
 
