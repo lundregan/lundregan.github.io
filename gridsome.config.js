@@ -8,12 +8,12 @@ module.exports = {
   siteName: 'Lundregan',
   plugins: [
     {
-      use: '@gridsome/source-filesystem',
+      use: '@gridsome/vue-remark',
       options: {
-        path: 'content/posts/**/*.md',
-        type: 'Post',
-        route: '/blog/:slug'
+        typeName: 'Documentation', // Required
+        baseDir: './content/blog', // Where .md files are located
+        pathPrefix: '/blog', // Add route prefix. Optional
+        template: './src/templates/blog.vue' // Optional
       }
-    }
   ]
 }
