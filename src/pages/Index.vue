@@ -1,11 +1,10 @@
 <template>
   <Layout>
-
     <section id='intro-section'>
       <font-awesome :icon="['fas', 'user-astronaut']" size='6x'/>
       <h1 id='intro-name'>Ethan Lundregan</h1>
       <h2 id='intro-position'>Junior Developer</h2>
-      <p>
+      <p id='intro-description'>
         Ethan Lundregan Is My Name<br />
         Programming Is My Game<br />
         Cheesy Lines Aren't Lame<br />
@@ -13,25 +12,22 @@
       </p>
 
       <div>
-        <a href="https://github.com/lundregan" target="_blank" rel='noopener'>
-          <button id='view-projects-button'>View My Projects</button>
-        </a>
-        <a href="https://github.com/lundregan" target="_blank" rel='noopener'>
+          <a href="https://github.com/lundregan" target="_blank" rel='noopener'>
           <button id='view-projects-button'>View My Github</button>
         </a>
       </div>
     </section>
 
     <section id='projects-section'>
-      <h1>Projects</h1>
+      <h1 id='projects-section-title'>Projects</h1>
 
-      <div id='projects'>
+      <div id='projects-list'>
         <div class="project">
           <g-image class='project-image' src='~/assets/images/projects/hexoggle.png'></g-image>
           <div class='project-description'>
-            <h3>Hexoggle</h3>
+            <h3 class='project-title'>Hexoggle</h3>
 
-            <p>
+            <p class='project-description'>
               Hexagon based puzzle game where you toggle hexagons to turn the whole board from red to green.
               Built with Vue as a learning project.
             </p>
@@ -64,10 +60,6 @@ export default {
 </script>
 
 <style>
-layout {
-  min-height: 100vh;
-}
-
 #intro-section {
   padding-top: 20vh;
   padding-bottom: 20vh;
@@ -108,11 +100,12 @@ layout {
   text-align: center;
 }
 
-#projects {
+#projects-list {
   display: flex;
   justify-content: space-around;
 }
 
+/* Project Style, for each project in projects list */
 .project {
   padding: 10px;
 
@@ -147,22 +140,11 @@ layout {
   margin-bottom: 0;
 }
 
-
 .project-image {
   max-width: 50%;
 }
 
-.project-link-image {
-  max-width: 50%;
-}
-
-
-.home-links a {
-  margin-right: 1rem;
-}
-
 /* Animations  */
-
 @keyframes button-grow {
   0% {transform: scale(1.0)}
   50% {transform: scale(1.3)}
