@@ -2,18 +2,18 @@
   <Layout>
     <section id='status-section'>
       <div id='status-work'>
-        <h1>Status</h1>
-        <p v-if='!about.employed'> {{ about.work_status }} </p>
+        <h1 class='heading'>Status</h1>
+        <p> {{ about.work_status }} </p>
       </div>
 
       <div id='status-learning'>
-        <h1>Current Work</h1>
+        <h1 class='heading'>Current Work</h1>
         <p v-for='item in about.learning_status' :key='item'> {{ item }} </p>
       </div>
     </section>
 
     <section id='contact-section'>
-      <h1> Contact me </h1>
+      <h1 class='heading'> Contact me </h1>
       <form 
         name="contact" 
         method="POST"
@@ -91,8 +91,7 @@ export default {
 
 #status-section, #contact-section {
   margin: 0 auto;
-
-  padding-top: 100px;
+  padding-top: 30px;
 
   text-align: center;
 }
@@ -102,6 +101,7 @@ export default {
 }
 
 #contact-section {
+
   max-width: 300px;
 }
 
@@ -113,20 +113,38 @@ export default {
   color: black;
 }
 
-input, textarea {
+input, textarea, button {
   margin: 5px 0 10px 0;
 
   padding: 5px;
  
   width: 100%;
 }
+button {
+  height: 35px;
+  width: 100%;
+
+  box-sizing: content-box;
+
+  font-size: 1.2rem;
+  font-weight: 700;
+
+  border: none;
+  border-radius: 5px;
+
+  background: purple;
+}
 
 textarea{
-  height: 10vh;
+  height: 30vh;
 }
 
 .form-input {
   color: #000000;
+}
+
+.heading {
+  color: purple;
 }
 
 </style>
