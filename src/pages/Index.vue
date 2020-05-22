@@ -118,6 +118,14 @@ export default {
   background: #212121;
 }
 
+@media screen and (max-width: 1000px) {
+  .project {
+    flex: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 .project-links {
   display: flex;
   justify-content: space-around;
