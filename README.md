@@ -1,7 +1,7 @@
 # Overview
 Portfolio projedt hosted with Github Pages, showcasing my skills and other projects.
 
-LIVE : https://lundregan.github.io/
+LIVE : https://lundregan.netlify.app/
 
 ## Stack Used
 * HMTL, CSS, Javascript
