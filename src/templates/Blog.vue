@@ -11,15 +11,3 @@ query {
   }
 }
 </static-query>
-
-<script> 
-
-
-
-</script>
-
-<style>
-
-
-
-</style>
