@@ -28,18 +28,18 @@
         <div class="sender-info">
           <div>
             <label for='name' class='label'>Your Name</label><br />
-            <input class='form-input' type="text" name="name" v-model='formData.name'/>
+            <input class='form-input form-textInput' type="text" name="name" v-model='formData.name'/>
           </div>
 
           <div>
             <label for='email' class='label'>Your Email</label><br />
-            <input class='form-input' type="email" name="email" v-model='formData.email'/>
+            <input class='form-input form-textInput' type="email" name="email" v-model='formData.email'/>
           </div>
         </div>
         
         <div class="message-wrapper">
           <label for='message' class='label'>Message:</label><br />
-          <textarea class='form-input' name="message" v-model='formData.message'></textarea>
+          <textarea class='form-input form-textarea' name="message" v-model='formData.message'></textarea>
         </div>
 
         <button id='submitForm' type="submit">Send Email</button>
@@ -113,14 +113,14 @@ export default {
   color: black;
 }
 
-input, textarea, button {
+.form-input, #submitForm {
   margin: 5px 0 10px 0;
 
   padding: 5px;
  
   width: 100%;
 }
-button {
+#submitForm {
   height: 35px;
   width: 100%;
 
@@ -135,7 +135,7 @@ button {
   background: purple;
 }
 
-textarea{
+.form-textarea{
   height: 30vh;
 }
 
