@@ -61,7 +61,7 @@ export default {
 
 <style>
 #intro-section {
-  padding-top: 20vh;
+  padding-top: 10vh;
   padding-bottom: 20vh;
 
   text-align: center;
@@ -95,7 +95,7 @@ export default {
 }
 
 #projects-section {
-  padding-bottom: 20vh;
+  padding-bottom: 10vh;
 
   text-align: center;
 }
