@@ -3,13 +3,24 @@ work_status: 'Available'
 learning_status:
   - Expanding my Vue knowledge with Gridsome
   - Learning Typescript
-
-skills:
-  - HTML, CSS, JavaScript
-  - Github / Git
-  - Vue
-  - Python
-  - Figma
-  - Node.js
-  - SQL
-  - JSON, YAML
+  
+allSkills:
+  frontend:
+    title: 'Front-End'
+    skills:
+      - HTML
+      - CSS
+      - Javascript
+      - Vue.js, Gridsome
+  backend:
+    title: 'Back-End'
+    skills:  
+      - Node.js
+      - Typescript
+      - REST API
+  misc:
+    title: 'Misc'
+    skills:
+      - Git / Github
+      - Figma
+      - JSON, YAML
