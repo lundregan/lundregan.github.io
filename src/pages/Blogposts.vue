@@ -1,7 +1,5 @@
 <template>
   <Layout>
-    <h1>Blog stuff Testing</h1>
-
     <div class='post' v-for='edge in $page.blog.edges' :key='edge.node.id'>
       
       <h1 class='title'> {{ edge.node.title }} </h1>
@@ -55,6 +53,10 @@ export default {
   border-radius: 15px;
 
   background-color: #212121;
+}
+
+.title {
+  color: purple;
 }
 
 </style>
