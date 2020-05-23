@@ -56,7 +56,7 @@ export default {
 }
 
 .title {
-  color: purple;
+  color: var(--color-title);
 }
 
 </style>

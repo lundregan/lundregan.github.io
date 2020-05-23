@@ -144,7 +144,7 @@ export default {
 }
 
 .heading {
-  color: purple;
+  color: var(--color-title);
 }
 
 </style>

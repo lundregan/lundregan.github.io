@@ -60,6 +60,10 @@ export default {
 </script>
 
 <style>
+.project-title, .projects-section-title {
+  color: var(--color-title);
+}
+
 #intro-section {
   padding-top: 10vh;
   padding-bottom: 20vh;

@@ -22,7 +22,7 @@
       <p>
         Built with
         <a class="link" href="//gridsome.org">Gridsome</a>
-        & Crafted with 💚 by
+        & Crafted with 🍕&🍺 by
         <a class="link" href="https://github.com/lundregan" target='_blank'>Ethan Lundregan</a>
       </p> 
     </footer>
@@ -38,6 +38,10 @@ query {
 </static-query>
 
 <style>
+:root {
+  --color-title: #00d9ff;
+}
+
 * {
   color: #FFFFFF;
 }
@@ -118,6 +122,6 @@ body {
 }
 
 .nav__link:hover {
-  color: purple;
+  color: var(--color-title);
 }
 </style>
