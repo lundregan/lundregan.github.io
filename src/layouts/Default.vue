@@ -113,6 +113,12 @@ body {
   color: purple;
 }
 
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
 .nav__link {
   margin-left: 20px;
 
