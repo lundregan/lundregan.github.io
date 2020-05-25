@@ -13,7 +13,10 @@
       <h1 class='skills-title title'>Skills</h1>
       <div class="skills">
         <div class='skill-box' v-for='section in about.allSkills' :key='section'>
-          <h1 class="skill-section-title title">{{section.title}}</h1>
+          <font-awesome class='skill-section-image' v-if='section.title == "Front-End"' :icon="['fas','pencil-ruler']" size='3x' />
+          <font-awesome class='skill-section-image' v-if='section.title == "Back-End"' :icon="['fas','terminal']" size='3x' />
+          <font-awesome class='skill-section-image' v-if='section.title == "Misc"' :icon="['fas','code-branch']" size='3x' />
+          <h1 class="skill-section-title">{{section.title}}</h1>
 
           <ul class="frontend-list">
             <li class='skill' v-for='skill in section.skills' :key='skill'> {{ skill }} </li>
@@ -62,15 +65,25 @@ export default {
 
   min-width: 15vw;
 
+  text-align: center;
+
   border-radius: 10px;
 
   background: #212121;
 }
 
 .skill-section-title {
+  margin-top: 5px;
+
   border-bottom: 2px #303030 solid;
 
+  text-align: center;
+
   font-size: 1.5rem;
+}
+
+.skill-section-image {
+  margin-top: 5px;
 }
 
 ul {
