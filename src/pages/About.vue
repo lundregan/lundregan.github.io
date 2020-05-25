@@ -13,9 +13,6 @@
       <h1 class='skills-title title'>Skills</h1>
       <div class="skills">
         <div class='skill-box' v-for='section in about.allSkills' :key='section'>
-          <font-awesome class='skill-section-image' v-if='section.title == "Front-End"' :icon="['fas','pencil-ruler']" size='3x' />
-          <font-awesome class='skill-section-image' v-if='section.title == "Back-End"' :icon="['fas','terminal']" size='3x' />
-          <font-awesome class='skill-section-image' v-if='section.title == "Misc"' :icon="['fas','code-branch']" size='3x' />
           <font-awesome class='skill-section-image' v-if='section.icon' :icon="['fas', section.icon]" size='3x' />
           <h1 class="skill-section-title">{{section.title}}</h1>
 
