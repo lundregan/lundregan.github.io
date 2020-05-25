@@ -57,13 +57,14 @@ export default {
 .skills {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .skill-box {
   margin: 20px;
   padding: 10px 20px;
 
-  min-width: 15vw;
+  min-width: 20vw;
 
   text-align: center;
 
