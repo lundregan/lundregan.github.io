@@ -7,20 +7,31 @@ learning_status:
 allSkills:
   frontend:
     title: 'Front-End'
-    skills:
-      - HTML
-      - CSS
-      - Javascript
-      - Vue.js, Gridsome
+    icon: 'pencil-ruler'
+    skills: 
+      - name: 'HTML'
+        icon: 'html5'
+      - name: 'CSS'
+        icon: 'css3-alt'
+      - name: 'Javascript'
+        icon: 'js'
+      - name: 'Vue.js (Gridsome)'
+        icon: 'vuejs'
   backend:
     title: 'Back-End'
+    icon: 'terminal'
     skills:  
-      - Node.js
-      - Typescript
-      - REST API
+    - name: 'Node.js'
+      icon: 'node'
+    - name: 'Typescript'
+      icon: 'superscript'
+    - name: 'REST API'
   misc:
     title: 'Misc'
+    icon: 'code-branch'
     skills:
-      - Git / Github
-      - Figma
-      - JSON, YAML
+    - name: 'Github / Git'
+      icon: 'git-alt'
+    - name: 'figma'
+      icon: 'figma'
+    - name: 'JSON, YAML'

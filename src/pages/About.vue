@@ -16,10 +16,14 @@
           <font-awesome class='skill-section-image' v-if='section.title == "Front-End"' :icon="['fas','pencil-ruler']" size='3x' />
           <font-awesome class='skill-section-image' v-if='section.title == "Back-End"' :icon="['fas','terminal']" size='3x' />
           <font-awesome class='skill-section-image' v-if='section.title == "Misc"' :icon="['fas','code-branch']" size='3x' />
+          <font-awesome class='skill-section-image' v-if='section.icon' :icon="['fas', section.icon]" size='3x' />
           <h1 class="skill-section-title">{{section.title}}</h1>
 
           <ul class="frontend-list">
-            <li class='skill' v-for='skill in section.skills' :key='skill'> {{ skill }} </li>
+            <li class='skill' v-for='skill in section.skills' :key='skill'> 
+              <font-awesome v-if='skill.icon' class='skill-icon' :icon='["fab", skill.icon]' />
+              {{ skill.name }}
+            </li>
           </ul>
         </div>
       </div>
