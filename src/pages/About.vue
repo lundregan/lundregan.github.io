@@ -55,10 +55,20 @@ export default {
   font-size: 2rem;
 }
 
+.about-section {
+  margin-top: 10vh;
+}
+
+.skill-section {
+  margin-top: 20vh;
+}
+
 .skills {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+
+  font-size: 1.6rem;
 }
 
 .skill-box {
@@ -66,6 +76,8 @@ export default {
   padding: 10px 20px;
 
   min-width: 20vw;
+
+  flex: auto;
 
   text-align: center;
 
