@@ -109,10 +109,6 @@ export default {
   margin-top: 6vh;
 }
 
-#submitForm {
-  color: black;
-}
-
 .form-input, #submitForm {
   margin: 5px 0 10px 0;
 
@@ -120,6 +116,7 @@ export default {
  
   width: 100%;
 }
+
 #submitForm {
   height: 35px;
   width: 100%;
@@ -132,7 +129,7 @@ export default {
   border: none;
   border-radius: 5px;
 
-  background: purple;
+  color: black;
 }
 
 .form-textarea{
