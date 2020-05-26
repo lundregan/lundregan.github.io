@@ -1,19 +1,23 @@
 <template>
   <div class="layout">
     <div class="content-wrapper">
-      <header class="header">
-        <strong>
-          <g-link class='brand' to="/">
-            <p class='brand-siteName'> {{ $static.metadata.siteName }} </p>
-            <p class='brand-positionName'> Junior Developer </p>
-          </g-link>
-        </strong>
-        <nav class="nav">
-          <g-link class="nav__link" to="/">Home</g-link>
-          <g-link class="nav__link" to="/about/">About</g-link>
-          <g-link class="nav__link" to="/blogposts/">Blog</g-link>
-          <g-link class="nav__link" to="/contact/">Contact</g-link>
+      <header class='navigation-header'>
+        <div class='header-brand'>
+          <p class='brand-title'>Lundregan // Junior-Developer</p>
+        </div>
+
+        <nav class='header-nav'>
+          <g-link class='nav__link' to='/'>Home</g-link>
+          <g-link class='nav__link' to='/about'>About</g-link>
+          <g-link class='nav__link' to='/blogposts'>Blog</g-link>
+          <g-link class='nav__link' to='/contact'>Contact</g-link>
         </nav>
+
+        <div class="header-social">
+          <a href='https://github.com/lundregan' target='_blank'><font-awesome class='social-icon' :icon='["fab", "github"]' /></a>
+          <a href='https://twitter.com/ELundregan' target='_blank'><font-awesome class='social-icon' :icon='["fab", "twitter"]' /></a>
+          <a href='https://www.linkedin.com/in/elundregan/' target='_blank'><font-awesome class='social-icon' :icon='["fab", "linkedin"]' /></a>
+        </div>
       </header>
       <slot/>
     </div>
@@ -39,7 +43,11 @@ query {
 
 <style>
 :root {
+  --header-background: #292C2E;
+  --header-accent: var(--color-title);
+
   --color-title: #00d9ff;
+  --color-test: #07C5EF;
 }
 
 * {
@@ -59,34 +67,87 @@ body {
 .layout {
   margin: 0 auto;
 
+  padding-top: 50px;
   padding-left: 20px;
   padding-right: 20px;
   
   max-width: 1080px;
   min-height: 100vh;
 }
+
 .content-wrapper {
   min-height: 90vh;
 }
 
-.header {
-  margin-bottom: 20px;
 
-  padding: 0 10px 0 10px;
-  
-  width: 100%;
-  height: 80px;
+/* __ Header __ */
+.navigation-header {
+  padding-top: 5px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
 
   display: flex;
+  justify-content: space-evenly;
 
-  justify-content: space-between;
-  align-items: center;
+  width: 100vw;
 
-  border-radius: 0 0 10px 10px;
-
-  background-color: #212121;
+  background: var(--header-background);
 }
 
+.header-brand {
+  margin-left: 15px;
+
+  flex: 1;
+}
+.brand-title {
+  margin: 0;
+}
+
+.header-nav {
+  flex: 2;
+
+  display: flex;
+}
+.nav__link {
+  padding-bottom: 15px;
+
+  text-align: center;
+  text-decoration: none;
+
+  font-size: 0.8rem;
+
+  flex: 1;
+
+  border-bottom: 2px solid transparent;
+
+  transition: all ease-out 1s;
+
+}
+.nav__link:hover {
+  color: var(--header-accent);
+  border-bottom: 2px solid var(--header-accent);
+}
+
+.header-social {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+}
+.social-icon {
+  padding: 6px 10px;
+  
+  transition: transform ease-in-out 0.2s;
+}
+.social-icon:hover {
+  transform: scale(1.2);
+  border-bottom: 2px solid var(--header-accent);
+}
+
+
+/* Footer */
 .footer {
   padding-top: 20px;
 
@@ -111,23 +172,5 @@ body {
   font-size: 70%;
 
   color: purple;
-}
-
-.nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.nav__link {
-  margin-left: 20px;
-
-  padding: 10px;
-
-  text-decoration: none;
-}
-
-.nav__link:hover {
-  color: var(--color-title);
 }
 </style>
