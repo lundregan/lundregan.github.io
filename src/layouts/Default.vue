@@ -22,13 +22,18 @@
       <slot/>
     </div>
 
-    <footer class="footer">
-      <p>
-        Built with
-        <a class="link" href="//gridsome.org">Gridsome</a>
-        & Crafted with 🍕&🍺 by
-        <a class="link" href="https://github.com/lundregan" target='_blank'>Ethan Lundregan</a>
+    <footer class="test-footer">
+      <div class="footer-social">
+          <a href='https://github.com/lundregan' target='_blank'><font-awesome class='social-icon' :icon='["fab", "github"]' /></a>
+          <a href='https://twitter.com/ELundregan' target='_blank'><font-awesome class='social-icon' :icon='["fab", "twitter"]' /></a>
+          <a href='https://www.linkedin.com/in/elundregan/' target='_blank'><font-awesome class='social-icon' :icon='["fab", "linkedin"]' /></a>
+      </div>
+      <p class='footer-copyright'>
+        ©2020, Ethan Lundregan
       </p> 
+      <p class='footer-message'>
+        Built with <a class="msg-link" href="//gridsome.org">Gridsome</a> & Crafted with 🍕&🍺 by <a class="msg" href="https://github.com/lundregan" target='_blank'>Ethan Lundregan</a>
+      </p>
     </footer>
   </div>
 </template>
@@ -79,6 +84,17 @@ body {
   min-height: 90vh;
 }
 
+.social-icon {
+  padding: 6px 10px;
+  
+  border-bottom: 2px solid transparent;
+
+  transition: transform ease-in-out 0.2s;
+}
+.social-icon:hover {
+  transform: scale(1.2);
+  border-bottom: 2px solid var(--header-accent);
+}
 
 /* __ Header __ */
 .navigation-header {
@@ -136,41 +152,22 @@ body {
   display: flex;
   justify-content: center;
 }
-.social-icon {
-  padding: 6px 10px;
-  
-  transition: transform ease-in-out 0.2s;
-}
-.social-icon:hover {
-  transform: scale(1.2);
-  border-bottom: 2px solid var(--header-accent);
-}
 
+/* __ FOOTER __ */
+.test-footer {
+  margin-top: 50px;
+  padding-top: 10px;
 
-/* Footer */
-.footer {
-  padding-top: 20px;
-
-  height: 100px;
+  border-top: 2px solid grey;
 
   text-align: center;
-
-  bottom: 0;
 }
 
-.brand {
-  text-decoration: none;
+.footer-copyright {
+  margin: 0;
 }
 
-.brand-siteName {
-  margin-bottom: 10px;
-}
-
-.brand-positionName {
-  margin-top: 10px;
-
-  font-size: 70%;
-
-  color: purple;
+.footer-message {
+  margin-top: 0;
 }
 </style>
