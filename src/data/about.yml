@@ -24,7 +24,6 @@ allSkills:
     - name: 'Node.js'
       icon: 'node'
     - name: 'Typescript'
-      icon: 'superscript'
     - name: 'REST API'
   misc:
     title: 'Misc'
