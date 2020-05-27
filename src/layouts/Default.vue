@@ -156,7 +156,7 @@ body {
 /* __ FOOTER __ */
 .test-footer {
   margin-top: 50px;
-  padding-top: 10px;
+  padding: 10px 0;
 
   border-top: 2px solid grey;
 
