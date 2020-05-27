@@ -22,7 +22,7 @@
       <slot/>
     </div>
 
-    <footer class="test-footer">
+    <footer class="footer">
       <div class="footer-social">
           <a href='https://github.com/lundregan' target='_blank'><font-awesome class='social-icon' :icon='["fab", "github"]' /></a>
           <a href='https://twitter.com/ELundregan' target='_blank'><font-awesome class='social-icon' :icon='["fab", "twitter"]' /></a>
@@ -154,7 +154,7 @@ body {
 }
 
 /* __ FOOTER __ */
-.test-footer {
+.footer {
   margin-top: 50px;
   padding: 10px 0;
 
