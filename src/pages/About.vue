@@ -12,12 +12,12 @@
     <section class="skill-section">
       <h1 class='skills-title title'>Skills</h1>
       <div class="skills">
-        <div class='skill-box' v-for='section in about.allSkills' :key='section'>
+        <div class='skill-box' v-for='section in about.allSkills' :key='section.key'>
           <font-awesome class='skill-section-image' v-if='section.icon' :icon="['fas', section.icon]" size='3x' />
           <h1 class="skill-section-title">{{section.title}}</h1>
 
           <ul class="frontend-list">
-            <li class='skill' v-for='skill in section.skills' :key='skill'> 
+            <li class='skill' v-for='skill in section.skills' :key='skill.key'> 
               <font-awesome v-if='skill.icon' class='skill-icon' :icon='["fab", skill.icon]' />
               {{ skill.name }}
             </li>
