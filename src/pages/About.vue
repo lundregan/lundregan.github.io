@@ -75,8 +75,6 @@ export default {
   margin: 20px;
   padding: 10px 20px;
 
-  min-width: 20vw;
-
   flex: auto;
 
   text-align: center;
