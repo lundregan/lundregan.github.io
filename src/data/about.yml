@@ -34,3 +34,12 @@ allSkills:
     - name: 'figma'
       icon: 'figma'
     - name: 'JSON, YAML'
+
+indexSkills:
+  - html5
+  - css3-alt
+  - js
+  - vuejs
+  - node
+  - git-alt
+  - figma

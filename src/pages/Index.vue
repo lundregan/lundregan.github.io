@@ -48,11 +48,30 @@
       </div>
     </section>
 
+    <section id='info-section'>
+      <div class="info-skills">
+        <h1 class='title'>Skills</h1>
+        <ul class="skills-list">
+          <li class="list-skill" v-for='skill in about.indexSkills' :key='skill.key'>
+            <font-awesome :icon='["fab", skill]' size='2x'/>
+          </li>
+        </ul>
+      </div>         
+    </section>
+
   </Layout>
 </template>
 
 <script>
+import about from '@/data/about.yml'
+
 export default {
+  data(){
+    return {
+      about
+    }
+  },
+
   metaInfo: {
     title: 'Lundregan'
   }
@@ -154,6 +173,21 @@ export default {
 
 .project-image {
   max-width: 50%;
+}
+
+/* Info Section */
+#info-section {
+  text-align: center;
+}
+
+.skills-list {
+  padding: 0px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+.list-skills {
+  padding: 10px;
 }
 
 /* Animations  */
