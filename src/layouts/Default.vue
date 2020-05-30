@@ -8,7 +8,7 @@
 
         <nav class='header-nav'>
           <g-link class='nav__link' to='/'>Home</g-link>
-          <g-link class='nav__link' to='/about'>About</g-link>
+          <g-link class='nav__link' to='/#info-section'>About</g-link>
           <g-link class='nav__link' to='/blogposts'>Blog</g-link>
           <g-link class='nav__link' to='/contact'>Contact</g-link>
         </nav>

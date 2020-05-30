@@ -49,13 +49,25 @@
     </section>
 
     <section id='info-section'>
-      <div class="info-skills">
-        <h1 class='title'>Skills</h1>
-        <ul class="skills-list">
-          <li class="skills-item" v-for='skill in about.indexSkills' :key='skill.key'>
-            <font-awesome style='skill-icon' :icon='["fab", skill]' size='2x'/>
-          </li>
-        </ul>
+      <h1 class='title'>About</h1>
+      <div class="info-details">
+        <div class="about-info">
+          <h3>Descriptiton</h3>
+          <p>
+            I am a Junior Developer, who is itching to get into the industry and show off my passion and talent for web development.
+          </p>
+          <p>
+            Currently I am learning more about the world of Vue, and having a blast doing so.
+          </p>
+        </div>
+        <div class="about-skills">
+          <h3>Skills</h3>
+          <ul class="skills-list">
+            <li class="skills-item" v-for='skill in about.indexSkills' :key='skill.key'>
+              <font-awesome style='skill-icon' :icon='["fab", skill]' size='2x'/>
+            </li>
+          </ul>
+        </div>
       </div>         
     </section>
 
@@ -178,6 +190,13 @@ export default {
 /* Info Section */
 #info-section {
   text-align: center;
+}
+.info-details {
+  display: flex;
+  justify-content: space-around;
+}
+.about-info, .about-sills {
+  width: 50%;
 }
 
 .skills-list {
