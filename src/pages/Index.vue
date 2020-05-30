@@ -52,8 +52,8 @@
       <div class="info-skills">
         <h1 class='title'>Skills</h1>
         <ul class="skills-list">
-          <li class="list-skill" v-for='skill in about.indexSkills' :key='skill.key'>
-            <font-awesome :icon='["fab", skill]' size='2x'/>
+          <li class="skills-item" v-for='skill in about.indexSkills' :key='skill.key'>
+            <font-awesome style='skill-icon' :icon='["fab", skill]' size='2x'/>
           </li>
         </ul>
       </div>         
@@ -188,6 +188,9 @@ export default {
 }
 .list-skills {
   padding: 10px;
+}
+.skills-item {
+  padding: 0 10px;
 }
 
 /* Animations  */
