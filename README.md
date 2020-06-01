@@ -1,5 +1,5 @@
 # Overview
-Portfolio projedt hosted with Github Pages, showcasing my skills and other projects.
+Portfolio website hosted with Netlify, showcasing recent projects, and knowledge.
 
 LIVE : https://lundregan.netlify.app/
 
