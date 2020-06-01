@@ -26,19 +26,20 @@
         <input type='hidden' name='form-name' value='Contact' />
 
         <div class="sender-info">
-          <div>
-            <label for='name' class='label'>Your Name</label><br />
-            <input class='form-input form-textInput' type="text" name="name" v-model='formData.name'/>
-          </div>
-
-          <div>
-            <label for='email' class='label'>Your Email</label><br />
-            <input class='form-input form-textInput' type="email" name="email" v-model='formData.email'/>
+          <div class='info-group-sender'>
+            <div class='info-name'>
+              <label for='name' class='label'>Your Name</label><br />
+              <input class='form-input form-textInput' type="text" name="name" v-model='formData.name'/>
+            </div>
+            <div class='info-email'>
+              <label for='email' class='label'>Your Email</label><br />
+              <input class='form-input form-textInput' type="email" name="email" v-model='formData.email'/>
+            </div>
           </div>
         </div>
         
         <div class="message-wrapper">
-          <label for='message' class='label'>Message:</label><br />
+          <label for='message' class='label'>Message</label><br />
           <textarea class='form-input form-textarea' name="message" v-model='formData.message'></textarea>
         </div>
 
@@ -89,6 +90,15 @@ export default {
 
 <style>
 
+.info-group-sender {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-name, .info-email {
+  width: 40%;
+}
+
 #status-section, #contact-section {
   margin: 0 auto;
   padding-top: 30px;
@@ -102,7 +112,7 @@ export default {
 
 #contact-section {
 
-  max-width: 300px;
+  max-width: 500px;
 }
 
 #status-learning {
