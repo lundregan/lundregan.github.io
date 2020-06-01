@@ -29,18 +29,25 @@
           <div class='info-group-sender'>
             <div class='info-name'>
               <label for='name' class='label'>Your Name</label><br />
-              <input class='form-input form-textInput' type="text" name="name" v-model='formData.name'/>
+              <input class='form-input form-textInput' type="text" name="name" v-model='formData.name' placeholder='John Doe...'/>
             </div>
             <div class='info-email'>
               <label for='email' class='label'>Your Email</label><br />
-              <input class='form-input form-textInput' type="email" name="email" v-model='formData.email'/>
+              <input class='form-input form-textInput' type="email" name="email" v-model='formData.email' placeholder='John.Doe1982@NotAScam.com'/>
             </div>
           </div>
         </div>
         
         <div class="message-wrapper">
           <label for='message' class='label'>Message</label><br />
-          <textarea class='form-input form-textarea' name="message" v-model='formData.message'></textarea>
+          <textarea 
+            class='form-input form-textarea'
+            name="message"
+            v-model='formData.message' 
+            placeholder='Morbi hendrerit 
+
+              ac dui vel bibendum. Duis in dapibus dui, nec commodo ante.'>
+          </textarea>
         </div>
 
         <button id='submitForm' type="submit">Send Email</button>
@@ -60,7 +67,7 @@ export default {
   data () {
     return {
       about,
-      formData: {}      
+      formData: {}
     }
   },
 
