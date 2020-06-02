@@ -54,10 +54,10 @@
         <div class="about-info">
           <h3>Descriptiton</h3>
           <p>
-            I am a Junior Developer, who is itching to get into the industry and show off my passion and talent for web development.
+            I am a Junior Developer, who is looking for their opportunity to get into the industry 
           </p>
           <p>
-            Currently I am learning more about the world of Vue, and having a blast doing so.
+            Currently learning more about the world of Vue, and having a blast doing so
           </p>
         </div>
         <div class="about-skills">
