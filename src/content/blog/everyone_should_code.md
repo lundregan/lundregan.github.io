@@ -10,12 +10,12 @@ Firstly I want to make a distinction from being able to code, and learning how t
 
 ##### Learning to code;
 - The process of learning how to break down problems into small chunks
-- Making iterative changes to get closer to the desired end result
+- Making iterative changes to get closer to the desired result
 - An understanding logic
 
 ##### Knowing how to code;
 - Being able to develop software, and to solve problems.
-- Creating algorithms to solve probelms with particular restraints, e.g. limited Time/Resources
+- Creating algorithms to solve problems with particular restraints, e.g. limited Time/Resources
 
 It would be fantastic if everyone knew how to code and solve problems, but I want to focus on the process and the tools you learn whilst learning to code.
 
@@ -29,25 +29,25 @@ The requirements for learning to code are thus;
 
 You may get the impression from movies, where you may see some nerd putting on hacking gloves and typing on multiple keyboards staring at 4 different screens all racing with numbers and foreign symbols.
 
-But as we everything in hollywood there are missconceptions and missrepusentations.
+But as we everything in Hollywood there are misconceptions and misrepresentations.
 
-The reality is more like waking up and grabbing some nice breakfeast, most likely make a cup of tea or coffee, sitdown at the desk and work at about the pace of doing a crossword puzzle.
+The reality is more like waking up and grabbing some nice breakfast, most likely make a cup of tea or coffee, sit down at the desk and work at about the pace of doing a crossword puzzle.
 
 # How does learning to code help me?
 
-The ability to breakdown problems and solve them is prehaps one of the most important skills.
+The ability to breakdown problems and solve them is perhaps one of the most important skills.
 Programming is purely that process.
 
-Being able to breakdown probelms helps when dealing with an plethora of problems for example;
+Being able to breakdown problems helps when dealing with a plethora of problems for example;
 - Deciding on the best medical choices, whilst balancing emotional strain
 - Designing Products
-- Improving you work efficency (Clean all the beds on the floor in a faster way... Well thats extra time for you break)
-- Figuring out different funding options for continuing buissness
+- Improving your work efficiency (Clean all the beds on the floor in a faster way... Well that's extra time for your break)
+- Figuring out different funding options for continuing business
 
 I think having one hobby that sharpens this skill is invaluable to everybody.
 There are other ways of working this skill though E.G
-- Chess, Crosswords, Sudukuor, and other Stratergic Games
-- Learning Mathmatics, and other STEM fields
+- Chess, Crosswords, Suduku, and other Strategic Games
+- Learning Mathematics, and other STEM fields
 
 # Is it hard to learn to code?
 
@@ -56,8 +56,8 @@ There are other ways of working this skill though E.G
 # The 4 Steps of development
 - Understand the problem
 - Take small incremental steps to solve the problem
-- Once you have a solution that youthink may work, test
-- Reapeat & Refine
+- Once you have a solution that you think may work, test
+- Repeat & Refine
 
 At every step between, before, and after adding in a lot of research (googling)
 
