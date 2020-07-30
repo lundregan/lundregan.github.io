@@ -1,8 +1,8 @@
 employed: false
 work_status: 'Available'
 learning_status:
-  - Expanding my Vue knowledge with Gridsome
-  - Learning Typescript
+  - Expanding my Vue, and using Vuetify (Material Design)
+  - Learning Typescript, and Deno (JS Runtime)
   
 allSkills:
   frontend:
