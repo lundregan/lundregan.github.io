@@ -28,7 +28,7 @@
           <a href='https://twitter.com/ELundregan' target='_blank'><font-awesome class='social-icon' :icon='["fab", "twitter"]' /></a>
           <a href='https://www.linkedin.com/in/elundregan/' target='_blank'><font-awesome class='social-icon' :icon='["fab", "linkedin"]' /></a>
       </div>
-      <p class='footer-copyright'>
+         <p class='footer-copyright'>
         ©2020, Ethan Lundregan
       </p> 
       <p class='footer-message'>

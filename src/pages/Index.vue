@@ -57,7 +57,7 @@
             I am a Junior Developer, who is looking for their opportunity to get into the industry 
           </p>
           <p>
-            Currently learning more about the world of Vue, and having a blast doing so
+            Currently learning more about the world of Vue, Node/Deno, and Typescript. Having a blast doing so!
           </p>
         </div>
         <div class="about-skills">
