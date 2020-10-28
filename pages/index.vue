@@ -2,8 +2,8 @@
   <div class="container">
     <div>
       <Logo />
-      <h1 class="title">Lundregan</h1>
-      <h2 class="subtitle">Ethan Lundregan, Another Awesome Web Developer</h2>
+      <h1 class="subtitle">Lundregan // Front-End Developer</h1>
+      <h2 class="">Ethan Lundregan, Another Awesome Web Developer</h2>
     </div>
   </div>
 </template>
