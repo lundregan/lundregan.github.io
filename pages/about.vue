@@ -1,8 +1,22 @@
 <template>
   <div class="about flex flex-col">
-    <h1 class="title text-center">About</h1>
+    <div class="flex flex-col w-1/3 self-center">
+      <p class="">
+        <span class="text-xs text-gray-600">rsa-46-root@regnix // </span>
+        <span class="text-white text-4xl">
+          Ethan Lundregan -Front-End Developer</span
+        >
+      </p>
+      <p class="self-center">
+        <span class="text-xs text-gray-600">rs-46-17a //</span>
+        <span class="text-white">
+          I am a Front-End Developer from the UK, Looking for the next
+          opportunity to improve my skills and build something great!
+        </span>
+      </p>
+    </div>
 
-    <section class="skills-section">
+    <section class="skills-section text-white">
       <div class="skills-title">
         <p class="title flex text-center">Skills</p>
       </div>
@@ -24,7 +38,7 @@
       </div>
     </section>
 
-    <section class="values-section">
+    <section class="values-section pt-32 text-white">
       <div class="values-title">
         <p class="title flex text-center">Values</p>
       </div>
