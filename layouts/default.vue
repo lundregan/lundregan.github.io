@@ -51,12 +51,13 @@ html
 // Dot Matrix Background
 // Colors
 $bg-color: #212121
-$dot-color: #eeff00;
+$dot-color: #eeff00
 
 // Dimensions
 $dot-size: 1px
 $dot-space: 16px
 
+// apply dot-matrix background
 body
   min-height: 100vh
   background: linear-gradient(90deg,$bg-color ($dot-space - $dot-size),transparent 1%)center,linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,$dot-color
