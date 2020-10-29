@@ -1,15 +1,27 @@
 <template>
-  <div class="social-side-bar flex flex-col">
-    <a class="bg-gray-600" target="_blank" href="https://github.com/lundregan">
-      <fa class="fa-2x" :icon="['fab', 'github']" />
-    </a>
-    <a
-      class="bg-gray-600"
-      target="_blank"
-      href="https://twitter.com/lundregan1"
+  <div
+    class="social-side-bar h-32"
+    data-augmented-ui="border tr-2-clip-x br-2-clip-x"
+    --aug-border-all="1"
+  >
+    <div
+      class="social-links flex flex-col my-4 py-16 align-center w-full h-full items-center justify-center"
     >
-      <fa class="fa-2x" :icon="['fab', 'twitter']" />
-    </a>
+      <a
+        class="self-center hover:text-purple-500"
+        target="_blank"
+        href="https://github.com/lundregan"
+      >
+        <fa class="fa-2x" :icon="['fab', 'github']" />
+      </a>
+      <a
+        class="self-center mt-4 hover:text-blue-500"
+        target="_blank"
+        href="https://twitter.com/lundregan1"
+      >
+        <fa class="fa-2x" :icon="['fab', 'twitter']" />
+      </a>
+    </div>
   </div>
 </template>
 
@@ -19,17 +31,6 @@ export default {}
 
 <style lang="sass">
 .social-side-bar
-    max-width: 50px
-
-.social-side-bar a
-    padding: 16px
-    padding-left: 8px
-
-.social-side-bar a:nth-child(1)
-    padding-top: 40px
-    clip-path: polygon(0 0, 100% 50%, 100% 100%, 0 100%)
-
-.social-side-bar a:nth-last-child(1)
-    padding-bottom: 40px
-    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%)
+  width: 3.5rem
+  --aug-border-all: 1px
 </style>
