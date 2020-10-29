@@ -25,7 +25,9 @@
         <div
           v-for="skill in skills"
           :key="skill.id"
-          class="skill flex flex-col pb-4"
+          class="skill flex flex-col pb-4 mx-6 mt-4 bg-gray-100"
+          :class="`text-${skill.color}-600 bg-${skill.color}-200`"
+          data-augmented-ui="all-hexangle-up border"
         >
           <fa
             class="value-icon text-6xl text-center h-32 self-center"
@@ -73,22 +75,27 @@ export default {
         {
           name: 'HTML & CSS',
           icon: 'html5',
+          color: 'orange',
         },
         {
           name: 'SASS',
           icon: 'sass',
+          color: 'blue',
         },
         {
-          name: 'Javascript & Typescript',
+          name: 'JS & TS',
           icon: 'js',
+          color: 'yellow',
         },
         {
           name: 'Version Control',
           icon: 'git-alt',
+          color: 'purple',
         },
         {
           name: 'Vue',
           icon: 'vuejs',
+          color: 'green',
         },
       ],
       values: [
@@ -121,6 +128,5 @@ export default {
   margin: 20px
 
 .skill
-  margin: 20px
-  width: 400px
+  --aug-all-width: 240px
 </style>
