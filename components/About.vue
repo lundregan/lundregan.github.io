@@ -1,15 +1,10 @@
 <template>
   <div class="about flex flex-col">
-    <div class="flex flex-col w-1/3 self-center">
-      <p class="">
-        <span class="text-xs text-gray-600">rsa-46-root@regnix // </span>
-        <span class="text-white text-4xl">
-          Ethan Lundregan -Front-End Developer</span
-        >
-      </p>
+    <p class="title">About</p>
+
+    <div class="flex flex-col w-1/2 self-center text-left mt-16">
       <p class="self-center">
-        <span class="text-xs text-gray-600">rs-46-17a //</span>
-        <span class="text-white">
+        <span class="self-desc text-white">
           I am a Front-End Developer from the UK, Looking for the next
           opportunity to improve my skills and build something great!
         </span>
@@ -40,15 +35,15 @@
       </div>
     </section>
 
-    <section class="values-section pt-32 text-white">
-      <div class="values-title">
-        <p class="title flex text-center">Values</p>
+    <section class="values-section pt-32 text-white text-center">
+      <div class="values-title self-center text-center">
+        <p class="text-6xl text-bold flextext-white">Values</p>
       </div>
       <div class="values-values flex justify-center md:h48 flex-wrap">
         <div
           v-for="value in values"
           :key="value.id"
-          class="value flex flex-col pb-4 lg:w-1/4 md:w-1/3 sm:screen"
+          class="value flex flex-col pb-4 lg:w-1/4 md:w-1/3 sm:screen grow"
         >
           <div class="value-header"></div>
           <fa
@@ -129,4 +124,10 @@ export default {
 
 .skill
   --aug-all-width: 240px
+
+.grow
+  transition: all .2s ease-in-out
+
+.grow:hover
+  transform: scale(1.25)
 </style>

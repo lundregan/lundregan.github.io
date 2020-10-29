@@ -1,5 +1,8 @@
 <template>
-  <div class="social-side-bar h-32" data-augmented-ui="tr-2-clip-x br-2-clip-x">
+  <div
+    class="social-side-bar h-32 mt-64"
+    data-augmented-ui="tr-2-clip-x br-2-clip-x"
+  >
     <div
       class="social-links flex flex-col my-4 py-16 align-center w-full h-full items-center justify-center"
     >
