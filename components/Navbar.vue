@@ -1,7 +1,7 @@
 <template>
   <div
     class="navbar justify-center con"
-    data-augmented-ui="border br-2-clip-x bl-2-clip-x t-clip"
+    data-augmented-ui="br-2-clip-x bl-2-clip-x t-clip"
     --aug-border-all="1"
   >
     <div class="navbar-links flex justify-center text-center">
@@ -15,6 +15,7 @@
       <nuxt-link to="/blog" class="link p-6 hover:text-blue-500"
         >Blog</nuxt-link
       >
+
       <nuxt-link to="/contact" class="link p-6 hover:text-blue-500"
         >Contact</nuxt-link
       >
@@ -32,4 +33,7 @@ export default {}
 
 .navbar
   --aug-border-all: 1px
+  background: #fcee0a
+  position: sticky
+  top: 0
 </style>

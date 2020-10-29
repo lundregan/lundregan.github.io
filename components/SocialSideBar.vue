@@ -33,4 +33,8 @@ export default {}
 .social-side-bar
   width: 3.5rem
   --aug-border-all: 1px
+  --aug-border-bg: #fcee0a
+  background: #fcee0a
+  position: sticky
+  top: 48px
 </style>
