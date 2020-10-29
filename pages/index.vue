@@ -1,10 +1,14 @@
 <template>
-  <div class="container">
+  <div class="container flex flex-col">
     <div>
       <Logo />
       <h1 class="subtitle">Lundregan // Front-End Developer</h1>
       <h2 class="">Ethan Lundregan, Another Awesome Web Developer</h2>
     </div>
+
+    <About />
+
+    <Contact id="Contact" class="mt-32" />
   </div>
 </template>
 

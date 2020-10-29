@@ -6,7 +6,7 @@
   >
     <div class="navbar-links flex justify-center text-center">
       <nuxt-link to="/" class="link p-6 hover:text-blue-500">Home</nuxt-link>
-      <nuxt-link to="/about" class="link p-6 hover:text-blue-500"
+      <nuxt-link to="/#About" class="link p-6 hover:text-blue-500"
         >About</nuxt-link
       >
       <nuxt-link to="/portfolio" class="link p-6 hover:text-blue-500"
@@ -16,7 +16,7 @@
         >Blog</nuxt-link
       >
 
-      <nuxt-link to="/contact" class="link p-6 hover:text-blue-500"
+      <nuxt-link to="/#Contact" class="link p-6 hover:text-blue-500"
         >Contact</nuxt-link
       >
     </div>
