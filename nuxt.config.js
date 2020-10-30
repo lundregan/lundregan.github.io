@@ -17,7 +17,7 @@ export default {
   css: ['@/node_modules/augmented-ui/augmented-ui.min.css'],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [],
+  plugins: ['@/plugins/vue-particles.js'],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
@@ -46,7 +46,7 @@ export default {
   content: {},
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {},
+  build: { transpile: ['vue-particles'] },
 
   fontawesome: {
     component: 'fa',

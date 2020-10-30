@@ -1,10 +1,12 @@
 <template>
-  <div class="container flex flex-col">
+  <div>
     <Intro />
 
-    <About />
+    <div class="container flex flex-col">
+      <About />
 
-    <Contact />
+      <Contact />
+    </div>
   </div>
 </template>
 
