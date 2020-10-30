@@ -1,9 +1,11 @@
 <template>
-  <div id="about" class="about flex flex-col">
-    <div class="flex flex-col w-1/2 self-center text-left mt-16">
-      <p class="self-center self-desc text-white">
-        I like building stuff, and I love learning new things.
-      </p>
+  <div id="about" class="about flex flex-col h-screen justify-around">
+    <div
+      class="self-desc flex flex-col w-1/2 self-center text-left mt-16 text-black font-bold text-2xl p-4 m-8"
+      data-augmented-ui="tl-clip-x br-clip"
+    >
+      <p class="self-center">I like building stuff,</p>
+      <p class="self-center">and I love learning new things.</p>
     </div>
 
     <section class="skills-section text-white">
@@ -11,7 +13,7 @@
         <div
           v-for="skill in skills"
           :key="skill.id"
-          class="skill flex flex-col pb-4 mx-6 mt-4 bg-transparent"
+          class="skill flex flex-col pb-4 mx-6 mt-4 bg-transparent grow"
           :class="`text-${skill.color}-600 bg-black`"
           data-augmented-ui="all-hexangle-up border"
         >
@@ -27,9 +29,6 @@
     </section>
 
     <section class="values-section pt-32 text-white text-center">
-      <div class="values-title self-center text-center">
-        <p class="text-6xl text-bold flextext-white">Values</p>
-      </div>
       <div class="values-values flex justify-center md:h48 flex-wrap">
         <div
           v-for="value in values"
@@ -113,6 +112,10 @@ export default {
 .value
   margin: 20px
 
+.value:hover
+  .value-icon
+    color: #fcee0a
+
 .skill
   --aug-all-width: 200px
 
@@ -121,4 +124,7 @@ export default {
 
 .grow:hover
   transform: scale(1.25)
+
+.self-desc
+  background: #fcee0a
 </style>
