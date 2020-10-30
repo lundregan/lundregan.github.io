@@ -21,12 +21,14 @@
       class="intro-desc self-center flex flex-col justify-center align-center"
     >
       <Logo />
-      <h1 class="text-6xl text-white self-center">
+      <p class="intro-desc-title text-white self-center">
         Lundregan // Front-End Developer
-      </h1>
-      <h2 class="text-white text-lg self-center">
-        A Next Generation Developer
-      </h2>
+      </p>
+      <p class="intro-desc-subtitle text-white text-lg self-center">
+        <span class="text-yellow-400 font-bold"
+          >A Next Generation Developer</span
+        >
+      </p>
     </div>
   </section>
 </template>
@@ -42,4 +44,10 @@ export default {}
 
 .intro-desc
   margin-top: -60vh
+
+.intro-desc-title
+  font-size: 3vw
+
+.intro-desc-subtitle
+  font-size: 1.25vw
 </style>

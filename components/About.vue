@@ -1,7 +1,5 @@
 <template>
   <div id="about" class="about flex flex-col">
-    <p class="title">About</p>
-
     <div class="flex flex-col w-1/2 self-center text-left mt-16">
       <p class="self-center self-desc text-white">
         I like building stuff, and I love learning new things.
@@ -13,8 +11,8 @@
         <div
           v-for="skill in skills"
           :key="skill.id"
-          class="skill flex flex-col pb-4 mx-6 mt-4 bg-gray-100"
-          :class="`text-${skill.color}-600 bg-${skill.color}-200`"
+          class="skill flex flex-col pb-4 mx-6 mt-4 bg-transparent"
+          :class="`text-${skill.color}-600 bg-black`"
           data-augmented-ui="all-hexangle-up border"
         >
           <fa
@@ -116,7 +114,7 @@ export default {
   margin: 20px
 
 .skill
-  --aug-all-width: 220px
+  --aug-all-width: 200px
 
 .grow
   transition: all .2s ease-in-out
