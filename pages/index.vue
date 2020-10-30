@@ -1,8 +1,10 @@
 <template>
   <div class="container flex flex-col">
     <Intro />
+
     <About />
-    <Contact id="Contact" class="mt-32" />
+
+    <Contact />
   </div>
 </template>
 

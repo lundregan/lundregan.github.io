@@ -1,5 +1,5 @@
 <template>
-  <section class="contact flex justify-center">
+  <section id="contact" class="contact flex justify-center">
     <form
       action=""
       class="flex flex-col bg-gray-900 px-32 py-16 h-1/3"

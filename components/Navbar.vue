@@ -2,11 +2,10 @@
   <div
     class="navbar justify-center con"
     data-augmented-ui="br-2-clip-x bl-2-clip-x t-clip"
-    --aug-border-all="1"
   >
     <div class="navbar-links flex justify-center text-center">
       <nuxt-link to="/" class="link p-6 hover:text-blue-500">Home</nuxt-link>
-      <nuxt-link to="/#About" class="link p-6 hover:text-blue-500"
+      <nuxt-link to="/#about" class="link p-6 hover:text-blue-500"
         >About</nuxt-link
       >
       <nuxt-link to="/portfolio" class="link p-6 hover:text-blue-500"
@@ -16,7 +15,7 @@
         >Blog</nuxt-link
       >
 
-      <nuxt-link to="/#Contact" class="link p-6 hover:text-blue-500"
+      <nuxt-link to="/#contact" class="link p-6 hover:text-blue-500"
         >Contact</nuxt-link
       >
     </div>

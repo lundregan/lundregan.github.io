@@ -1,21 +1,14 @@
 <template>
-  <div class="about flex flex-col">
+  <div id="about" class="about flex flex-col">
     <p class="title">About</p>
 
     <div class="flex flex-col w-1/2 self-center text-left mt-16">
-      <p class="self-center">
-        <span class="self-desc text-white">
-          I am a Front-End Developer from the UK, Looking for the next
-          opportunity to improve my skills and build something great!
-        </span>
+      <p class="self-center self-desc text-white">
+        I like building stuff, and I love learning new things.
       </p>
     </div>
 
     <section class="skills-section text-white">
-      <div class="skills-title">
-        <p class="title flex text-center">Skills</p>
-      </div>
-
       <div class="skills-skills flex justify-center md:h48 flex-wrap">
         <div
           v-for="skill in skills"
@@ -83,7 +76,7 @@ export default {
           color: 'yellow',
         },
         {
-          name: 'Version Control',
+          name: 'Git / VC',
           icon: 'git-alt',
           color: 'purple',
         },
@@ -123,7 +116,7 @@ export default {
   margin: 20px
 
 .skill
-  --aug-all-width: 240px
+  --aug-all-width: 220px
 
 .grow
   transition: all .2s ease-in-out
