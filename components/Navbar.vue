@@ -3,21 +3,14 @@
     class="navbar justify-center con"
     data-augmented-ui="br-2-clip-x bl-2-clip-x b-clip"
   >
-    <div class="navbar-links flex justify-center text-center">
-      <nuxt-link to="/" class="link p-6 hover:text-blue-500">Home</nuxt-link>
-      <nuxt-link to="/#about" class="link p-6 hover:text-blue-500"
-        >About</nuxt-link
-      >
-      <nuxt-link to="/portfolio" class="link p-6 hover:text-blue-500"
-        >Portfolio</nuxt-link
-      >
-      <nuxt-link to="/blog" class="link p-6 hover:text-blue-500"
-        >Blog</nuxt-link
-      >
-
-      <nuxt-link to="/#contact" class="link p-6 hover:text-blue-500"
-        >Contact</nuxt-link
-      >
+    <div
+      class="navbar-links flex justify-center text-center font-semibold justify-around text-xl"
+    >
+      <nuxt-link to="/" class="link p-6 grow">Home</nuxt-link>
+      <nuxt-link to="/#about" class="link p-6 grow">About</nuxt-link>
+      <nuxt-link to="/#contact" class="link p-6 grow">Contact</nuxt-link>
+      <nuxt-link to="#" class="link p-6 grow disabled">Portfolio</nuxt-link>
+      <nuxt-link to="#" class="link p-6 grow">Blog</nuxt-link>
     </div>
   </div>
 </template>
@@ -37,4 +30,13 @@ export default {}
   position: sticky
   top: 0
   z-index: 1
+
+.navbar-links
+  padding: 0 20%
+
+.grow
+  transition: all .2s ease-in-out
+
+.grow:hover
+  transform: scale(1.75)
 </style>
