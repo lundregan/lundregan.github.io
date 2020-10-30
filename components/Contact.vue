@@ -1,5 +1,12 @@
 <template>
-  <section id="contact" class="contact flex justify-center">
+  <section id="contact" class="contact flex flex-col justify-center h-1/2">
+    <div
+      class="self-desc flex flex-col w-1/2 self-center text-left mt-16 text-black font-bold text-2xl p-4 m-8"
+      data-augmented-ui="tl-clip-x br-clip"
+    >
+      <p class="self-center">Contact Me!</p>
+    </div>
+
     <form
       action=""
       class="flex flex-col bg-gray-900 px-32 py-16 h-1/3"
@@ -41,6 +48,8 @@
           Contact Me!
         </button>
       </div>
+
+      <p class="text-xs pt-4 text-white">Currently Under Maintenance</p>
     </form>
   </section>
 </template>
