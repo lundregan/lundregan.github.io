@@ -35,6 +35,7 @@ export default {}
   background: #fcee0a
   position: sticky
   top: 48px
+  z-index: 1
 
 .grow
   transition: all .2s ease-in-out
