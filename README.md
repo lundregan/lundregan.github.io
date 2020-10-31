@@ -1,9 +1,20 @@
-# Overview
-Portfolio website hosted with Netlify, showcasing recent projects, and knowledge.
+# portfolio
 
-LIVE : https://lundregan.netlify.app/
+## Build Setup
 
-## Stack Used
-* HMTL, CSS, Javascript
-* [Gridsome](https://gridsome.org/) : Jamstack Framework - Using Vue.js and GraphQL
-* [Netlify](https://www.netlify.com/) : Deployment
+```bash
+# install dependencies
+$ npm install
+
+# serve with hot reload at localhost:3000
+$ npm run dev
+
+# build for production and launch server
+$ npm run build
+$ npm run start
+
+# generate static project
+$ npm run generate
+```
+
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
