@@ -34,7 +34,7 @@ export default {}
   --aug-border-all: 1px
   background: #fcee0a
   position: sticky
-  top: 48px
+  top: 55px
   z-index: 1
 
 .grow
