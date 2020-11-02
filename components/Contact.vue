@@ -4,7 +4,7 @@
       class="self-desc flex flex-col w-1/2 self-center text-left mt-16 text-black font-bold text-2xl p-4 m-8"
       data-augmented-ui="tl-clip-x br-clip"
     >
-      <p class="self-center">Contact Me!</p>
+      <p class="self-center">Bring your Vision to Life?</p>
     </div>
 
     <form

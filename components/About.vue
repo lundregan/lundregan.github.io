@@ -1,34 +1,13 @@
 <template>
   <div id="about" class="about flex flex-col h-screen justify-around">
     <div
-      class="self-desc flex flex-col w-1/2 self-center text-left mt-16 text-black font-bold text-2xl p-4 m-8"
+      class="self-desc flex flex-col w-1/2 self-center text-left mt-16 text-black font-bold text-2xl p-4 m-4"
       data-augmented-ui="tl-clip-x br-clip"
     >
-      <p class="self-center">I like building stuff,</p>
-      <p class="self-center">and I love learning new things.</p>
+      <p class="self-center">Why Me?</p>
     </div>
 
-    <section class="skills-section text-white">
-      <div class="skills-skills flex justify-center md:h48 flex-wrap">
-        <div
-          v-for="skill in skills"
-          :key="skill.id"
-          class="skill flex flex-col pb-4 mx-6 mt-4 bg-transparent grow"
-          :class="`text-${skill.color}-600 bg-black`"
-          data-augmented-ui="all-hexangle-up border"
-        >
-          <fa
-            class="value-icon text-6xl text-center h-32 self-center"
-            :icon="['fab', skill.icon]"
-          />
-          <p class="lg:text-3xl md:text-xl px-4 self-center">
-            {{ skill.name }}
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="values-section pt-32 text-white text-center">
+    <section class="values-section text-white text-center">
       <div class="values-values flex justify-center md:h48 flex-wrap">
         <div
           v-for="value in values"
@@ -45,6 +24,26 @@
           </p>
           <p class="text-base px-8 pt-6 self-center">
             {{ value.description }}
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills-section text-white">
+      <div class="skills-skills flex justify-center md:h48 flex-wrap">
+        <div
+          v-for="skill in skills"
+          :key="skill.id"
+          class="skill flex flex-col pb-4 mx-6 mt-4 bg-transparent grow"
+          :class="`text-${skill.color}-600 bg-black`"
+          data-augmented-ui="all-hexangle-up border"
+        >
+          <fa
+            class="value-icon text-6xl text-center h-32 self-center"
+            :icon="['fab', skill.icon]"
+          />
+          <p class="lg:text-3xl md:text-xl px-4 self-center">
+            {{ skill.name }}
           </p>
         </div>
       </div>
@@ -97,7 +96,7 @@ export default {
             'Your design should shine, no matter what medium is used to engage it.',
         },
         {
-          title: 'UX / UI',
+          title: 'Strong UX / UI',
           icon: 'pencil-ruler',
           description:
             'Easy to navigate and intuiitve to use should be a priority',
