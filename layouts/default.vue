@@ -1,5 +1,23 @@
 <template>
   <div>
+    <vue-particles
+      class="particles-background absolute top-0 w-full h-screen"
+      color="#dedede"
+      :particle-opacity="0"
+      :particles-number="100"
+      :particle-size="0"
+      lines-color="#dedede"
+      :lines-width="1"
+      :line-linked="true"
+      :line-opacity="0.6"
+      :lines-distance="120"
+      :move-speed="8"
+      :hover-effect="true"
+      hover-mode="repulse"
+      :click-effect="false"
+    >
+    </vue-particles>
+
     <Navbar />
     <SocialSideBar />
     <Nuxt />
@@ -62,4 +80,10 @@ body
   min-height: 100vh
   background: linear-gradient(90deg,$bg-color ($dot-space - $dot-size),transparent 1%)center,linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,$dot-color
   background-size: $dot-space $dot-space
+
+// Moving particle background
+.particles-background
+  position: fixed
+  top: 0
+  z-index: 0
 </style>

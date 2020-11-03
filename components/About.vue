@@ -1,7 +1,7 @@
 <template>
   <div id="about" class="about flex flex-col h-screen justify-around">
     <div
-      class="self-desc flex flex-col w-1/2 self-center text-left mt-16 text-black font-bold text-2xl p-4 m-4"
+      class="self-desc flex flex-col w-1/2 self-center text-left text-black font-bold text-2xl p-4"
       data-augmented-ui="tl-clip-x br-clip"
     >
       <p class="self-center">Why Me?</p>
@@ -110,6 +110,7 @@ export default {
 <style lang="sass">
 .value
   margin: 20px
+  z-index: 1
 
 .value:hover
   .value-icon

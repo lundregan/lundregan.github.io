@@ -1,5 +1,5 @@
 <template>
-  <section id="contact" class="contact flex flex-col justify-center h-1/2">
+  <section id="contact" class="contact flex flex-col justify-center h-screen">
     <div
       class="self-desc flex flex-col w-1/2 self-center text-left mt-16 text-black font-bold text-2xl p-4 m-8"
       data-augmented-ui="tl-clip-x br-clip"
@@ -9,7 +9,7 @@
 
     <form
       action=""
-      class="flex flex-col bg-gray-900 px-32 py-16 h-1/3"
+      class="flex flex-col bg-gray-900 px-32 py-16 h-1/3 mt-8"
       data-augmented-ui="tl-clip br-clip border"
     >
       <div class="self-center w-full mb-8">
