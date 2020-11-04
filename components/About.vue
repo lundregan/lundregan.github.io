@@ -57,14 +57,19 @@ export default {
     return {
       skills: [
         {
-          name: 'HTML & CSS',
+          name: 'HTML',
           icon: 'html5',
           color: 'orange',
         },
         {
+          name: 'CSS',
+          icon: 'css3',
+          color: 'blue',
+        },
+        {
           name: 'SASS',
           icon: 'sass',
-          color: 'blue',
+          color: 'purple',
         },
         {
           name: 'JS & TS',
@@ -74,7 +79,7 @@ export default {
         {
           name: 'Git / VC',
           icon: 'git-alt',
-          color: 'purple',
+          color: 'pink',
         },
         {
           name: 'Vue',
@@ -87,7 +92,7 @@ export default {
           title: 'Fast',
           icon: 'fighter-jet',
           description:
-            'No one likes a slow website, espacially your users. Fast loading times are essential for a good and lasting impression',
+            'No one likes a slow website especially your users. Fast loading times are essential for a great and lasting impression!',
         },
         {
           title: 'Responsive & Accessible',
@@ -99,7 +104,7 @@ export default {
           title: 'Strong UX / UI',
           icon: 'pencil-ruler',
           description:
-            'Easy to navigate and intuiitve to use should be a priority',
+            'Easy to navigate, and being intuitive to use should be a Priority!',
         },
       ],
     }
