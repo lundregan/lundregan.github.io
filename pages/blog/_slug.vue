@@ -17,6 +17,9 @@
       data-augmented-ui="tl-clip-inset tr-clip-inset bl-clip-inset br-clip-inset none"
     />
     <nuxt-content :document="article" />
+
+    <p class="text-center mt-16 text-xl">Want to read more?</p>
+    <prev-next :prev="prev" :next="next" />
   </article>
 </template>
 
@@ -25,7 +28,17 @@ export default {
   async asyncData({ $content, params }) {
     const article = await $content('articles', params.slug).fetch()
 
-    return { article }
+    const [prev, next] = await $content('articles')
+      .only(['title', 'slug'])
+      .sortBy('createdAt', 'asc')
+      .surround(params.slug)
+      .fetch()
+
+    return {
+      article,
+      prev,
+      next,
+    }
   },
 
   methods: {
@@ -67,5 +80,6 @@ img
   padding-left: 20px
 
 .nuxt-content ul
+  padding-left: 40px
   list-style-type: square
 </style>

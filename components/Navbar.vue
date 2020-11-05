@@ -10,7 +10,7 @@
       <nuxt-link to="/#about" class="link p-6 grow">About</nuxt-link>
       <nuxt-link to="/#contact" class="link p-6 grow">Contact</nuxt-link>
       <nuxt-link to="#" class="link p-6 grow disabled">Portfolio</nuxt-link>
-      <nuxt-link to="#" class="link p-6 grow">Blog</nuxt-link>
+      <nuxt-link to="/blog" class="link p-6 grow">Blog</nuxt-link>
     </div>
   </div>
 </template>
