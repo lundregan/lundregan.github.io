@@ -53,7 +53,7 @@ export default {
 <style lang="sass">
 article
   position: relative
-  background: #212121
+  background: #111111
   margin: 0 30vw
 
 img

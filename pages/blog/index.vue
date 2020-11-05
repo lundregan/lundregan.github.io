@@ -52,7 +52,7 @@ img
 .article
   position: relative
   z-index: 1
-  background: #313131
+  background: #111111
   --aug-border-bg: yellow
 
 .search-posts
