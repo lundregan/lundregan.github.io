@@ -31,7 +31,7 @@
       <div class="self-center text-left">
         <label for="msg" class="pl-6">Message</label><br />
         <textarea
-          class="px-4 rounded mt-2 form-input"
+          class="px-4 rounded mt-2 p-2 form-input"
           name="msg"
           cols="50"
           rows="4"
