@@ -10,7 +10,10 @@
       <p class="self-center">Bring your Vision to Life?</p>
     </div>
 
-    <form action="" class="form-contact flex flex-col px-2 md:px-32 py-16 h-1/3 mt-8">
+    <form
+      action=""
+      class="form-contact flex flex-col px-2 md:px-32 py-16 h-1/3 mt-8"
+    >
       <div class="self-center w-full mb-8 text-left">
         <label for="name" class="pl-6">Name</label><br />
         <input
