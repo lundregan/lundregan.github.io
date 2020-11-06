@@ -34,8 +34,12 @@ export default {}
   --aug-border-all: 1px
   background: #fcee0a
   position: sticky
-  top: 55px
+  top: 221px
   z-index: 1
+
+@media (min-width: 640px)
+  .social-side-bar
+    top: 55px
 
 .grow
   transition: all .2s ease-in-out

@@ -1,6 +1,7 @@
 <template>
   <div>
     <Intro />
+    <SocialSideBar />
 
     <div class="container flex flex-col">
       <About />

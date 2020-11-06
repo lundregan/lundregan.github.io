@@ -19,7 +19,6 @@
     </vue-particles>
 
     <Navbar />
-    <SocialSideBar />
     <Nuxt />
     <Footer />
   </div>

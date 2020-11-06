@@ -1,14 +1,14 @@
 <template>
-  <section class="intro">
+  <section class="intro flex justify-center align-center">
     <div
       class="intro-desc self-center flex flex-col justify-center align-center"
     >
       <Logo />
-      <p class="intro-desc-title text-white self-center">
+      <p class="intro-desc-title text-white self-center text-xl md:text-4xl">
         Lundregan // Front-End Developer
       </p>
-      <p class="intro-desc-subtitle text-white text-lg self-center">
-        <span class="text-yellow-400 font-bold"
+      <p class="intro-desc-subtitle text-white self-center">
+        <span class="text-yellow-400 font-bold lg:text-xl"
           >A Next Generation Developer</span
         >
       </p>
@@ -22,11 +22,5 @@ export default {}
 
 <style lang="sass">
 .intro
-  height: 70vh
-
-.intro-desc-title
-  font-size: 3vw
-
-.intro-desc-subtitle
-  font-size: 1.25vw
+  height: 50vh
 </style>
