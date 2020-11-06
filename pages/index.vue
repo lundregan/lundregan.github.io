@@ -1,9 +1,8 @@
 <template>
-  <div>
+  <div class="index">
     <Intro />
     <SocialSideBar />
-
-    <div class="container flex flex-col">
+    <div class="container flex flex-col flex-wrap">
       <About />
 
       <Contact />

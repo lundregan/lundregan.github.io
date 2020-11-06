@@ -1,5 +1,8 @@
 <template>
-  <section id="contact" class="contact flex flex-col justify-center h-screen">
+  <section
+    id="contact"
+    class="contact flex flex-col justify-center h-screen w-full mt:24 lg:w-1/2"
+  >
     <div
       class="self-desc flex flex-col w-1/2 self-center text-left mt-16 text-black font-bold text-2xl p-4 m-8"
       data-augmented-ui="tl-clip-x br-clip"
@@ -7,7 +10,7 @@
       <p class="self-center">Bring your Vision to Life?</p>
     </div>
 
-    <form action="" class="form-contact flex flex-col px-32 py-16 h-1/3 mt-8">
+    <form action="" class="form-contact flex flex-col px-2 md:px-32 py-16 h-1/3 mt-8">
       <div class="self-center w-full mb-8 text-left">
         <label for="name" class="pl-6">Name</label><br />
         <input
@@ -28,10 +31,10 @@
         />
       </div>
 
-      <div class="self-center text-left">
+      <div class="self-center text-left w-full mb-8">
         <label for="msg" class="pl-6">Message</label><br />
         <textarea
-          class="px-4 rounded mt-2 p-2 form-input"
+          class="px-4 rounded mt-2 p-2 form-input w-full"
           name="msg"
           cols="50"
           rows="4"
@@ -66,6 +69,7 @@ label
 
 textarea
   min-height: 40px
+  max-width:100%
 
 .form-input
   border-bottom: 4px solid transparent

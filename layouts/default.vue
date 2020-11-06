@@ -19,7 +19,7 @@
     </vue-particles>
 
     <Navbar />
-    <Nuxt />
+    <Nuxt class="mb-64" />
     <Footer />
   </div>
 </template>

@@ -113,6 +113,9 @@ export default {
 </script>
 
 <style lang="sass">
+.about
+  display: contents
+
 .value
   margin: 20px
   z-index: 1
