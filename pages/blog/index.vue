@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col">
+  <div class="blog flex flex-col">
     <BlogSearchInput class="search-posts w-1/4 self-center" />
 
     <ul class="articles-list w-1/3 self-center text-white">
@@ -45,6 +45,9 @@ export default {
 </script>
 
 <style lang="sass">
+.blog
+  min-height: 100vh
+
 img
   width: 100%
   height: auto

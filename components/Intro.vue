@@ -22,5 +22,5 @@ export default {}
 
 <style lang="sass">
 .intro
-  height: 50vh
+  min-height: 60vh
 </style>

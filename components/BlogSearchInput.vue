@@ -1,5 +1,5 @@
 <template>
-  <div class="blog-search">
+  <div class="blog-search mt-8">
     <p class="text-white p-1">Search</p>
     <input
       v-model="searchQuery"
@@ -45,9 +45,6 @@ export default {
 </script>
 
 <style lang="sass">
-.blog-search
-    margin-top: -10vw
-
 .search-input
     width: 100%
     outline: none
