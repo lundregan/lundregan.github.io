@@ -18,7 +18,7 @@
         <nuxt-link to="/#contact" class="link px-6 grow py-1"
           >Contact</nuxt-link
         >
-        <nuxt-link to="#" class="link px-6 grow disabled py-1"
+        <nuxt-link to="/portfolio" class="link px-6 grow disabled py-1"
           >Portfolio</nuxt-link
         >
         <nuxt-link to="/blog" class="link px-6 grow py-1">Blog</nuxt-link>
