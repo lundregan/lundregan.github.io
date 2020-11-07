@@ -1,20 +1,18 @@
 <template>
-  <div class="blog flex flex-col">
-    <ul class="articles-list w-1/3 self-center text-white">
+  <div class="portfolio flex flex-col">
+    <p class="text-center text-white text-4xl">Portfolio</p>
+    <ul
+      class="projects-list self-center text-white flex flex-wrap sm:w-1/2 px-6"
+    >
       <li
         v-for="project of projects"
         :key="project.slug"
-        class="article text-center bg-blue-100 m-12 my-16"
-        data-augmented-ui="tl-2-clip-x tr-2-clip-x bl-2-clip-x br-2-clip-x border"
+        class="project text-center sm:w-1/3 lg:w-1/4"
       >
         <NuxtLink
           :to="{ name: 'project-slug', params: { slug: project.slug } }"
         >
-          <h2 class="text-4xl py-2">{{ project.title }}</h2>
-          <img :src="project.image" :alt="project.alt" class="py-4" />
-          <div>
-            <p class="text-xs pb-6">{{ project.description }}</p>
-          </div>
+          <img :src="project.image" :alt="project.alt" />
         </NuxtLink>
       </li>
     </ul>
@@ -25,7 +23,7 @@
 export default {
   async asyncData({ $content, params }) {
     const projects = await $content('projects', params.slug)
-      .only(['title', 'description', 'image', 'slug', 'createdAt'])
+      .only(['name', 'description', 'image', 'slug', 'createdAt'])
       .sortBy('createdAt', 'asc')
       .fetch()
 
@@ -39,20 +37,15 @@ export default {
 </script>
 
 <style lang="sass">
-.blog
+.projects-list
+  background: #111111
+
+.portfolio
   min-height: 100vh
 
-img
-  width: 100%
-  height: auto
-
-.article
+.project
   position: relative
   z-index: 1
   background: #111111
   --aug-border-bg: yellow
-
-.search-posts
-  position: relative
-  z-index: 1
 </style>
