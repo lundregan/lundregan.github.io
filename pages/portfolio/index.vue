@@ -10,7 +10,7 @@
         class="project text-center sm:w-1/3 lg:w-1/4"
       >
         <NuxtLink
-          :to="{ name: 'project-slug', params: { slug: project.slug } }"
+          :to="{ name: 'portfolio-slug', params: { slug: project.slug } }"
         >
           <img :src="project.image" :alt="project.alt" />
         </NuxtLink>
@@ -36,7 +36,7 @@ export default {
 }
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
 .projects-list
   background: #111111
 

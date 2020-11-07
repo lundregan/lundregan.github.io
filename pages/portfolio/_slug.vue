@@ -1,7 +1,7 @@
 <template>
-  <div class="project flex flex-col mt-4 text-white">
-    <div class="self-center w-1/2">
-      <div class="">
+  <div class="project-container flex flex-col mt-4 text-white m-16">
+    <div class="self-center project p-8">
+      <div class="flex flex-col">
         <img :src="project.image" alt="" class="self-center" />
       </div>
 
@@ -38,9 +38,13 @@ export default {
 
 <style lang="sass">
 .project
+  background: #111111
   position: relative
   z-index: 1
 
 .project-link:hover
   color: yellow
+
+img
+  max-width: 500px
 </style>
