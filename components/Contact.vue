@@ -11,7 +11,9 @@
     </div>
 
     <form
-      action=""
+      action="mailto:lundregan.ethan@gmail.com"
+      method="POST"
+      enctype="text/html"
       class="form-contact flex flex-col px-2 md:px-32 py-16 h-1/3 mt-8"
     >
       <div class="self-center w-full mb-8 text-left">
@@ -48,13 +50,12 @@
 
       <div class="self-center w-full h-16 mt-4">
         <button
+          type="submit"
           class="btn-contact w-full h-16 text-black font-black py-2 px-4 rounded"
         >
           Contact Me!
         </button>
       </div>
-
-      <p class="text-xs pt-4 text-white">Currently Under Maintenance</p>
     </form>
   </section>
 </template>
@@ -83,6 +84,8 @@ textarea
 
 .btn-contact
   background: #fcee0a
+  position: relative
+  z-index: 1
 
 .btn-contact:hover
   background: darken(#fcee0a, 5%)
