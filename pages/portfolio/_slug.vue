@@ -2,7 +2,7 @@
   <div class="project-container flex flex-col mt-4 text-white m-16">
     <div class="self-center project p-8">
       <div class="flex flex-col">
-        <img :src="project.image" alt="" class="self-center" />
+        <img class="project-image self-center" :src="project.image" alt="" />
       </div>
 
       <div class="play-code flex justify-center text-xl">
@@ -45,6 +45,6 @@ export default {
 .project-link:hover
   color: yellow
 
-img
+.project-image
   max-width: 500px
 </style>

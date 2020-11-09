@@ -1,8 +1,8 @@
 <template>
   <div class="blog flex flex-col">
-    <BlogSearchInput class="search-posts w-1/4 self-center" />
+    <BlogSearchInput class="search-posts px-4 w-full sm:w-1/4 self-center" />
 
-    <ul class="articles-list w-1/3 self-center text-white">
+    <ul class="articles-list w-full sm:w-1/2 md:1/3 self-center text-white">
       <li
         v-for="article of articles"
         :key="article.slug"
