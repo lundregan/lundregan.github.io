@@ -75,12 +75,8 @@ textarea
   min-height: 40px
   max-width:100%
 
-.form-input
-  border-bottom: 4px solid transparent
-
 .form-input:focus
   outline: none
-  border-bottom: 4px solid #fcee0a
 
 .btn-contact
   background: #fcee0a
