@@ -1,5 +1,5 @@
 <template>
-  <div id="about" class="about flex flex-col h-screen justify-around">
+  <div id="about" class="about flex flex-col lg:h-screen justify-around">
     <div
       class="self-desc flex flex-col w-1/2 self-center text-left text-black font-bold text-2xl p-4"
       data-augmented-ui="tl-clip-x br-clip"
@@ -7,7 +7,7 @@
       <p class="self-center">Why Me?</p>
     </div>
 
-    <section class="values-section text-white text-center">
+    <section class="values-section text-white text-center mt-6 lg:mt-12">
       <div class="values-values flex justify-center md:h48 flex-wrap">
         <div
           v-for="value in values"
@@ -29,7 +29,7 @@
       </div>
     </section>
 
-    <section class="skills-section text-white">
+    <section class="skills-section text-white mt-6 lg:mt-12">
       <div class="skills-skills flex justify-center md:h48 flex-wrap">
         <div
           v-for="skill in skills"

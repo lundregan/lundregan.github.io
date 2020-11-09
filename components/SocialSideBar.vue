@@ -1,6 +1,6 @@
 <template>
   <div
-    class="social-side-bar h-32 mt-64"
+    class="social-side-bar h-32 sm:sticky"
     data-augmented-ui="tr-2-clip-x br-2-clip-x"
   >
     <div
@@ -33,7 +33,6 @@ export default {}
   width: 3.5rem
   --aug-border-all: 1px
   background: #fcee0a
-  position: sticky
   top: 221px
   z-index: 1
 

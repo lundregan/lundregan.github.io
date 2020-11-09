@@ -1,5 +1,5 @@
 <template>
-  <section class="intro flex justify-center align-center">
+  <section class="intro flex justify-center align-center h-64 lg:h-screen">
     <div
       class="intro-desc self-center flex flex-col justify-center align-center"
     >
@@ -21,6 +21,4 @@ export default {}
 </script>
 
 <style lang="sass">
-.intro
-  min-height: 60vh
 </style>

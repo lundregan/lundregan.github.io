@@ -1,10 +1,10 @@
 <template>
   <section
     id="contact"
-    class="contact flex flex-col justify-center h-screen w-full mt:24 lg:w-1/2"
+    class="contact flex flex-col justify-center lg:h-screen w-full mt-24 lg:w-1/2"
   >
     <div
-      class="self-desc flex flex-col w-1/2 self-center text-left mt-16 text-black font-bold text-2xl p-4 m-8"
+      class="self-desc flex flex-col w-1/2 self-center text-left text-black font-bold text-2xl p-4 m-8"
       data-augmented-ui="tl-clip-x br-clip"
     >
       <p class="self-center">Bring your Vision to Life?</p>
