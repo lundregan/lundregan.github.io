@@ -1,25 +1,27 @@
 <template>
-  <article class="flex flex-col p-4 text-white">
-    <div class="head self-center">
-      <p class="post-title font-bold text-4xl text-center">
-        {{ article.title }}
-      </p>
-      <p class="date-author text-center">
-        {{ formatDate(article.updatedAt) }} by
-        <span class="italic">Ethan Lundregan</span>
-      </p>
+  <article class="flex flex-col text-white w-full bg-transparent p-4  ">
+    <div class="article self-center w-full sm:w-1/2 p-1 sm:p-6">
+      <div class="head self-center">
+        <p class="post-title font-bold text-4xl text-center">
+          {{ article.title }}
+        </p>
+        <p class="date-author text-center">
+          {{ formatDate(article.updatedAt) }} by
+          <span class="italic">Ethan Lundregan</span>
+        </p>
+      </div>
+
+      <img
+        :src="article.image"
+        :alt="article.alt"
+        class="py-4"
+        data-augmented-ui="tl-clip-inset tr-clip-inset bl-clip-inset br-clip-inset none"
+      />
+      <nuxt-content :document="article" />
+
+      <p class="text-center mt-16 text-xl">Want to read more?</p>
+      <prev-next :prev="prev" :next="next" />
     </div>
-
-    <img
-      :src="article.image"
-      :alt="article.alt"
-      class="py-4"
-      data-augmented-ui="tl-clip-inset tr-clip-inset bl-clip-inset br-clip-inset none"
-    />
-    <nuxt-content :document="article" />
-
-    <p class="text-center mt-16 text-xl">Want to read more?</p>
-    <prev-next :prev="prev" :next="next" />
   </article>
 </template>
 
@@ -51,10 +53,8 @@ export default {
 </script>
 
 <style lang="sass">
-article
-  position: relative
+.article
   background: #111111
-  margin: 0 30vw
 
 img
   width: 100%
