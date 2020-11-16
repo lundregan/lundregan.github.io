@@ -7,7 +7,7 @@
 
       <div class="play-code flex justify-center text-xl">
         <a :href="project.playLink" class="project-link" target="_blank"
-          >Play</a
+          >Live</a
         >
         <p class="px-6">|</p>
         <a :href="project.codeLink" class="project-link" target="_blank"
@@ -20,8 +20,13 @@
             {{ project.name }}
           </p>
           <p class="text-xl">{{ project.description }}</p>
+          
+          
+          <div class="mt-6">
+            <p class="underline">Stack</p>
+            <p>{{ project.stack }}</p>
+          </div>
         </span>
-        <p>{{ project.stack }}</p>
       </div>
     </div>
   </div>

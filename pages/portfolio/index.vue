@@ -7,7 +7,7 @@
       <li
         v-for="project of projects"
         :key="project.slug"
-        class="project text-center sm:w-1/3 lg:w-1/4"
+        class="project text-center lg:w-1/3"
       >
         <NuxtLink
           :to="{ name: 'portfolio-slug', params: { slug: project.slug } }"
