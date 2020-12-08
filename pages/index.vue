@@ -1,5 +1,5 @@
 <template>
-  <div class="index">
+  <!-- <div class="index">
     <Intro />
     <SocialSideBar />
     <div class="container flex flex-col flex-wrap">
@@ -7,13 +7,32 @@
 
       <Contact />
     </div>
+  </div> -->
+  <div>
+    <full-page ref="fullpage" :options="options" id="fullpage">
+      <Intro class="section active" />
+      <Projects class="section" />
+      <About class="section" />
+      <Contact class="section" />
+    </full-page>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 
-export default Vue.extend({})
+export default Vue.extend({
+  data() {
+    return {
+      options: {
+        menu: '#navbar',
+        anchors: ['home', 'projects', 'about', 'contact'],
+        loopBottom: true,
+        scrollingSpeed: 400,
+      },
+    }
+  },
+})
 </script>
 
 <style>

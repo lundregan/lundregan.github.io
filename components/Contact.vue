@@ -1,6 +1,5 @@
 <template>
   <section
-    id="contact"
     class="contact flex flex-col justify-center lg:h-screen w-full mt-24 lg:w-1/2"
   >
     <div

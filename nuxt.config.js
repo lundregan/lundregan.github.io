@@ -48,6 +48,7 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
     'nuxt-fontawesome',
+    'nuxt-fullpage.js',
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)

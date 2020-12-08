@@ -1,5 +1,5 @@
 <template>
-  <div id="about" class="about flex flex-col lg:h-screen justify-around">
+  <div class="about flex flex-col lg:h-screen justify-around">
     <div
       class="self-desc flex flex-col w-1/2 self-center text-left text-black font-bold text-2xl p-4"
       data-augmented-ui="tl-clip-x br-clip"
