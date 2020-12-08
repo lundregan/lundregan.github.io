@@ -20,7 +20,6 @@
 
     <Navbar />
     <Nuxt class="mb-64" />
-    <Footer />
   </div>
 </template>
 <style lang="sass">

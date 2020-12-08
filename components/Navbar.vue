@@ -44,8 +44,22 @@
     </div>
   </div> -->
   <nav
-    class="w-full px-8 flex justify-end sticky top-0 text-gray-600 text-2xl font-serif"
+    class="w-full px-8 p-4 flex justify-between sticky top-0 text-gray-500 text-2xl font-serif"
   >
+    <div class="text-white flex">
+      <a href="https://twitter.com/lundregan1" target="_blank">
+        <fa
+          class="fa-2x text-blue-600 mx-2 hover:text-blue-400"
+          :icon="['fab', 'twitter-square']"
+        />
+      </a>
+      <a href="https://github.com/lundregan" target="_blank">
+        <fa
+          class="fa-2x text-purple-600 mx-2 hover:text-purple-400"
+          :icon="['fab', 'github-square']"
+        />
+      </a>
+    </div>
     <div class="py-2 flex justify-between w-1/4" id="navbar">
       <a href="#home" data-menuanchor="home">Home</a>
       <a href="#projects" data-menuanchor="projects">Projects</a>
@@ -89,7 +103,7 @@ nav
   z-index: 2
 
   .active
-    @apply text-gray-100
+    @apply text-red-600
 
 .navs
   z-index: 2
