@@ -1,48 +1,4 @@
 <template>
-  <!-- <div class="navs sticky top-0">
-    <div
-      class="mobile-nav text-white text-center bg-yellow-400 sm:hidden"
-      data-augmented-ui="br-2-clip-x bl-2-clip-x b-clip"
-    >
-      <fa
-        class="text-black m-4 text-4xl"
-        :icon="['fas', hamburgerMenuIcon]"
-        @click="openCloseHamburger()"
-      />
-      <div
-        v-if="hamburgerExpanded"
-        class="text-center flex flex-col text-2xl text-gray- sm:flex-row sm:justify-center md:justify-around lg:px-16 pb-6 sm:pt-2 md:font-semibold"
-      >
-        <nuxt-link to="/" class="link px-6 grow py-1">Home</nuxt-link>
-        <nuxt-link to="/#about" class="link px-6 grow py-1">About</nuxt-link>
-        <nuxt-link to="/#contact" class="link px-6 grow py-1"
-          >Contact</nuxt-link
-        >
-        <nuxt-link to="/portfolio" class="link px-6 grow py-1"
-          >Portfolio</nuxt-link
-        >
-        <nuxt-link to="/blog" class="link px-6 grow py-1">Blog</nuxt-link>
-      </div>
-    </div>
-    <div
-      class="navbar w-full invisible sm:visible"
-      data-augmented-ui="br-2-clip-x bl-2-clip-x b-clip"
-    >
-      <div
-        class="text-center flex flex-col text-2xl text-gray- sm:flex-row sm:justify-center md:justify-around lg:px-16 pb-6 sm:pt-2 md:font-semibold"
-      >
-        <nuxt-link to="/" class="link px-6 grow py-1">Home</nuxt-link>
-        <nuxt-link to="/#about" class="link px-6 grow py-1">About</nuxt-link>
-        <nuxt-link to="/#contact" class="link px-6 grow py-1"
-          >Contact</nuxt-link
-        >
-        <nuxt-link to="/portfolio" class="link px-6 grow disabled py-1"
-          >Portfolio</nuxt-link
-        >
-        <nuxt-link to="/blog" class="link px-6 grow py-1">Blog</nuxt-link>
-      </div>
-    </div>
-  </div> -->
   <nav
     class="w-full px-8 p-4 flex justify-between sticky top-0 text-gray-500 text-2xl font-serif"
   >
@@ -60,7 +16,7 @@
         />
       </a>
     </div>
-    <div class="py-2 flex justify-between w-1/4" id="navbar">
+    <div id="navbar" class="py-2 flex justify-between w-1/4">
       <a href="#home" data-menuanchor="home">Home</a>
       <a href="#projects" data-menuanchor="projects">Projects</a>
       <a href="#about" data-menuanchor="about">About</a>
