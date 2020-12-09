@@ -1,53 +1,44 @@
 <template>
-  <div class="about flex flex-col lg:h-screen justify-around">
-    <div
-      class="self-desc flex flex-col w-1/2 self-center text-left text-black font-bold text-2xl p-4"
-      data-augmented-ui="tl-clip-x br-clip"
-    >
-      <p class="self-center">Why Me?</p>
+  <div class="flex justify-center items-center h-screen">
+    <div class="flex flex-col justify-around">
+      <section class="text-white text-center">
+        <div class="values-values flex justify-center flex-wrap">
+          <div
+            v-for="value in values"
+            :key="value.id"
+            class="value flex flex-col pb-4 lg:w-1/4 md:w-1/3 sm:screen grow"
+          >
+            <div class="value-header"></div>
+            <fa
+              class="value-icon text-6xl h-32 self-center"
+              :icon="['fas', value.icon]"
+            />
+            <p class="lg:text-3xl md:text-xl px-4 self-center text-red-600">
+              {{ value.title }}
+            </p>
+            <p class="text-base px-8 pt-6 self-center">
+              {{ value.description }}
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills-section text-white mt-6 lg:mt-12">
+        <div class="skills-skills flex justify-center md:h48 flex-wrap">
+          <div
+            v-for="skill in skills"
+            :key="skill.id"
+            class="skill flex flex-col pb-4 mx-6 mt-4 bg-transparent grow w-32 h-32 shadow-xl"
+            :class="`text-${skill.color}-600`"
+          >
+            <fa
+              class="value-icon text-6xl text-center h-32 self-center"
+              :icon="['fab', skill.icon]"
+            />
+          </div>
+        </div>
+      </section>
     </div>
-
-    <section class="values-section text-white text-center mt-6 lg:mt-12">
-      <div class="values-values flex justify-center md:h48 flex-wrap">
-        <div
-          v-for="value in values"
-          :key="value.id"
-          class="value flex flex-col pb-4 lg:w-1/4 md:w-1/3 sm:screen grow"
-        >
-          <div class="value-header"></div>
-          <fa
-            class="value-icon text-6xl h-32 self-center"
-            :icon="['fas', value.icon]"
-          />
-          <p class="lg:text-3xl md:text-xl px-4 self-center">
-            {{ value.title }}
-          </p>
-          <p class="text-base px-8 pt-6 self-center">
-            {{ value.description }}
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="skills-section text-white mt-6 lg:mt-12">
-      <div class="skills-skills flex justify-center md:h48 flex-wrap">
-        <div
-          v-for="skill in skills"
-          :key="skill.id"
-          class="skill flex flex-col pb-4 mx-6 mt-4 bg-transparent grow"
-          :class="`text-${skill.color}-600 bg-black`"
-          data-augmented-ui="all-hexangle-up border"
-        >
-          <fa
-            class="value-icon text-6xl text-center h-32 self-center"
-            :icon="['fab', skill.icon]"
-          />
-          <p class="lg:text-3xl md:text-xl px-4 self-center">
-            {{ skill.name }}
-          </p>
-        </div>
-      </div>
-    </section>
   </div>
 </template>
 
@@ -125,7 +116,7 @@ export default {
     color: #fcee0a
 
 .skill
-  --aug-all-width: 200px
+  background: #111111
 
 .grow
   transition: all .2s ease-in-out
