@@ -1,10 +1,15 @@
 <template>
-  <div
-    class="w-full h-screen flex justify-center align-center items-center p-16 pt-64"
-  >
-    <div class="flex">
-      <div v-for="project in projects" :key="project.id" class="m-8 w-1/2">
-        <img class="project-image" :src="project.img" :alt="project.alt" />
+  <div class="w-full h-screen flex justify-center items-center p-8">
+    <div class="flex flex-wrap justify-center items-center">
+      <div
+        v-for="project in projects"
+        :key="project.id"
+        class="m-8 w-1/4 relative shadow-md"
+        @hover="project.hover == true"
+      >
+        <a :href="project.link" target="_blank">
+          <img class="project-image" :src="project.img" :alt="project.alt" />
+        </a>
       </div>
     </div>
   </div>
@@ -18,10 +23,12 @@ export default {
         {
           name: 'Desmos Corp',
           img: '/project-images/desmoscorp.jpg',
+          link: 'https://lundregan.com'
         },
         {
-          name: 'Desmos Corp',
+          name: 'Hexoggle',
           img: '/project-images/hexoggle.png',
+          link: 'https://hexoggle.netlify.app/'
         },
       ],
     }
@@ -31,5 +38,5 @@ export default {
 
 <style lang="sass">
 .project-image
-  z-index: 1
+  z-index: 2
 </style>
