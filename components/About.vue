@@ -116,7 +116,7 @@ export default {
     color: #fcee0a
 
 .skill
-  background: #111111
+  background: #212121
 
 .grow
   transition: all .2s ease-in-out
