@@ -6,34 +6,34 @@
           <div
             v-for="value in values"
             :key="value.id"
-            class="value flex flex-col pb-4 lg:w-1/4 md:w-1/3 sm:screen grow"
+            class="value flex flex-col md:py-2 lg:w-1/4 md:w-1/3 sm:screen grow"
           >
             <div class="value-header"></div>
             <fa
-              class="value-icon text-6xl h-32 self-center"
+              class="value-icon text-2xl md:text-6xl h-16 md:h-32 self-center"
               :icon="['fas', value.icon]"
             />
             <p class="lg:text-3xl md:text-xl px-4 self-center text-red-600">
               {{ value.title }}
             </p>
-            <p class="text-base px-8 pt-6 self-center">
+            <p class="text-xs md:text-base px-8 pt-6 self-center">
               {{ value.description }}
             </p>
           </div>
         </div>
       </section>
 
-      <section class="skills-section text-white mt-6 lg:mt-12">
+      <section class="skills-section text-white sm:mt-6 lg:mt-12">
         <div class="skills-skills flex justify-center md:h48 flex-wrap">
           <div
             v-for="skill in skills"
             :key="skill.id"
-            class="skill flex flex-col pb-4 mx-6 mt-4 bg-transparent grow w-32 h-32 shadow-xl"
-            :class="`text-${skill.color}-600`"
+            class="skill flex flex-col pb-4 mx-6 mt-4 grow shadow-xl"
           >
             <fa
-              class="value-icon text-6xl text-center h-32 self-center"
+              class="value-icon text-2xl md:text-6xl text-center h-32 self-center"
               :icon="['fab', skill.icon]"
+              :class="`text-${skill.color}-600`"
             />
           </div>
         </div>
@@ -114,9 +114,6 @@ export default {
 .value:hover
   .value-icon
     color: #fcee0a
-
-.skill
-  background: #212121
 
 .grow
   transition: all .2s ease-in-out

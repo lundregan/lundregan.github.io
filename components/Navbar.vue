@@ -15,7 +15,7 @@
       </a>
     </div>
     <nav
-      class="text-gray-600 flex justify-right absolute w-full top-0"
+      class="flex justify-right absolute w-full top-0 bg-gray-900 text-gray-100 sm:text-gray-600 sm:bg-transparent"
       id="navbar"
     >
       <fa
@@ -23,10 +23,7 @@
         :icon="hamburgerIcon"
         @click="openCloseHamburger()"
       />
-      <div
-        class="flex flex-col self-center sm:flex-row right-0"
-        v-if="hamburgerExpanded"
-      >
+      <div class="flex self-center font-semibold sm:font-base" v-if="hamburgerExpanded">
         <a href="#home" data-menuanchor="home" class="px-2">Home</a>
         <a href="#projects" data-menuanchor="projects" class="px-2">Projects</a>
         <a href="#about" data-menuanchor="about" class="px-2">About</a>
