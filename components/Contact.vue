@@ -5,7 +5,7 @@
         action="mailto:lundregan.ethan@gmail.com"
         method="POST"
         enctype="text/html"
-        class="flex flex-col"
+        class="flex flex-col m-2"
       >
         <div class="self-center w-full mb-8 text-left">
           <label for="name" class="pl-6">Name</label>
