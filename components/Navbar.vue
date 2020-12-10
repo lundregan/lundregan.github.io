@@ -1,8 +1,6 @@
 <template>
-  <nav
-    class="w-full px-8 p-4 flex justify-between sticky top-0 text-gray-500 text-2xl font-serif"
-  >
-    <div class="text-white flex">
+  <div>
+    <div class="text-white flex absolute bottom-0 left-0 p-2 social-links">
       <a href="https://twitter.com/lundregan1" target="_blank">
         <fa
           class="fa-2x text-blue-600 mx-2 hover:text-blue-400"
@@ -16,29 +14,42 @@
         />
       </a>
     </div>
-    <div id="navbar" class="py-2 flex justify-between w-1/4">
-      <a href="#home" data-menuanchor="home">Home</a>
-      <a href="#projects" data-menuanchor="projects">Projects</a>
-      <a href="#about" data-menuanchor="about">About</a>
-      <a href="#contact" data-menuanchor="contact">Contact</a>
-    </div>
-  </nav>
+    <nav
+      class="text-gray-600 flex justify-right absolute w-full top-0"
+      id="navbar"
+    >
+      <fa
+        class="hamburger m-4"
+        :icon="hamburgerIcon"
+        @click="openCloseHamburger()"
+      />
+      <div
+        class="flex flex-col self-center sm:flex-row right-0"
+        v-if="hamburgerExpanded"
+      >
+        <a href="#home" data-menuanchor="home" class="px-2">Home</a>
+        <a href="#projects" data-menuanchor="projects" class="px-2">Projects</a>
+        <a href="#about" data-menuanchor="about" class="px-2">About</a>
+        <a href="#contact" data-menuanchor="contact" class="px-2">Contact</a>
+      </div>
+    </nav>
+  </div>
 </template>
 
 <script>
 export default {
   data() {
     return {
-      hamburgerExpanded: false,
+      hamburgerExpanded: true,
     }
   },
 
   computed: {
-    hamburgerMenuIcon() {
+    hamburgerIcon() {
       if (this.hamburgerExpanded) {
-        return 'times'
+        return ['fas', 'times']
       } else {
-        return 'hamburger'
+        return ['fas', 'bars']
       }
     },
   },
@@ -58,32 +69,6 @@ export default {
 nav
   z-index: 2
 
-  .active
-    @apply text-red-600
-
-.navs
-  z-index: 2
-
-.mobile-nav
-  background: #fcee0a
-
-.navbar
-  --aug-border-all: 1px
-  --aug-b: 20px
-  background: #fcee0a
-  position: sticky
-  top: 0
-  z-index: 2
-
-.navbar-links
-  padding: 0 20%
-
-.link
-  color: #111111
-
-.grow
-  transition: all .2s ease-in-out
-
-.grow:hover
-  transform: scale(1.75)
+.active
+  @apply text-red-700
 </style>
