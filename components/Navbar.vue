@@ -3,13 +3,13 @@
     <div class="text-white flex absolute bottom-0 left-0 p-2 social-links">
       <a href="https://twitter.com/lundregan1" target="_blank">
         <fa
-          class="fa-2x text-blue-600 mx-2 hover:text-blue-400"
+          class="fa-2x text-blue-600 mx-2 hover:text-blue-400 animate__animated animate__fadeInRight"
           :icon="['fab', 'twitter-square']"
         />
       </a>
       <a href="https://github.com/lundregan" target="_blank">
         <fa
-          class="fa-2x text-purple-600 mx-2 hover:text-purple-400"
+          class="fa-2x text-purple-600 mx-2 hover:text-purple-400 animate__animated animate__fadeInRight"
           :icon="['fab', 'github-square']"
         />
       </a>

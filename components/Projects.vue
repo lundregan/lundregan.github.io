@@ -23,7 +23,7 @@ export default {
         {
           name: 'Desmos Corp',
           img: '/project-images/desmoscorp.jpg',
-          link: 'https://lundregan.com',
+          link: 'https://desmoscorp.lundregan.com',
         },
         {
           name: 'Hexoggle',
