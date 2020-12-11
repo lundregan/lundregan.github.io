@@ -32,6 +32,11 @@ html
   -moz-osx-font-smoothing: grayscale
   -webkit-font-smoothing: antialiased
   box-sizing: border-box
+  scroll-behavior: smooth
+  overflow: none
+
+body
+  overflow: hidden
 
 *,
 *::before,
@@ -72,5 +77,5 @@ body
 .particles-background
   position: fixed
   top: 0
-  z-index: 0
+  z-index: -1
 </style>
