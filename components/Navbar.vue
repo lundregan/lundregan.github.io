@@ -63,7 +63,7 @@ export default {
 *, *:before, *:after
   box-sizing: border-box
 
-nav
+nav, .social-links
   z-index: 2
 
 .active
