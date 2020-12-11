@@ -28,7 +28,7 @@
           <div
             v-for="skill in skills"
             :key="skill.id"
-            class="skill flex flex-col pb-4 mx-6 mt-4 grow shadow-xl"
+            class="skill flex flex-col p-2 grow"
           >
             <fa
               class="value-icon text-2xl md:text-6xl text-center h-32 self-center"
