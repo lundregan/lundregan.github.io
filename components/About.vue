@@ -33,7 +33,7 @@
             <fa
               class="value-icon text-4xl md:text-6xl text-center h-32 self-center"
               :icon="['fab', skill.icon]"
-              :class="`text-${skill.color}-600`"
+              :class="skill.color"
             />
           </div>
         </div>
@@ -50,32 +50,32 @@ export default {
         {
           name: 'HTML',
           icon: 'html5',
-          color: 'orange',
+          color: 'text-red-600',
         },
         {
           name: 'CSS',
           icon: 'css3',
-          color: 'blue',
+          color: 'text-blue-600',
         },
         {
           name: 'SASS',
           icon: 'sass',
-          color: 'purple',
+          color: 'text-purple-600',
         },
         {
           name: 'JS & TS',
           icon: 'js',
-          color: 'yellow',
+          color: 'text-yellow-600',
         },
         {
           name: 'Git / VC',
           icon: 'git-alt',
-          color: 'pink',
+          color: 'text-pink-600',
         },
         {
           name: 'Vue',
           icon: 'vuejs',
-          color: 'green',
+          color: 'text-green-600',
         },
       ],
       values: [
@@ -110,10 +110,6 @@ export default {
 .value
   margin: 20px
   z-index: 1
-
-.value:hover
-  .value-icon
-    color: #fcee0a
 
 .grow
   transition: all .2s ease-in-out

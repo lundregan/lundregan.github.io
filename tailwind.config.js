@@ -1,3 +1,5 @@
+const colors = require('material-ui-colors')
+
 module.exports = {
   future: {
     // removeDeprecatedGapUtilities: true,
@@ -5,7 +7,11 @@ module.exports = {
   },
   purge: [],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        colors: { ...colors },
+      },
+    },
   },
   variants: {},
   plugins: [],
