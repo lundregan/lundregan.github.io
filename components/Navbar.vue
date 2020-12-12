@@ -56,8 +56,8 @@ export default {
 nav, .social-links
   z-index: 2
 
-.active
-  @apply text-red-700
+  a:hover
+    @apply text-red-700
 
 .navigations
   z-index: 2

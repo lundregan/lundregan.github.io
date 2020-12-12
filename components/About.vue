@@ -31,7 +31,7 @@
             class="skill flex flex-col p-2 grow"
           >
             <fa
-              class="value-icon text-2xl md:text-6xl text-center h-32 self-center"
+              class="value-icon text-4xl md:text-6xl text-center h-32 self-center"
               :icon="['fab', skill.icon]"
               :class="`text-${skill.color}-600`"
             />
