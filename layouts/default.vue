@@ -33,10 +33,22 @@ html
   -webkit-font-smoothing: antialiased
   box-sizing: border-box
   scroll-behavior: smooth
-  overflow: none
 
-body
-  overflow: hidden
+/* width */
+::-webkit-scrollbar
+  width: 8px
+
+/* Track */
+::-webkit-scrollbar-track
+  background: #111111
+
+/* Handle */
+::-webkit-scrollbar-thumb
+  @apply bg-red-600
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover
+  background: red
 
 *,
 *::before,
