@@ -5,11 +5,11 @@ export const siteTitle = 'Next.js Sample Website'
 
 export default function Layout({ children, home }) {
   return (
-    <div className="">
-      <nav className="text-white p-4 flex justify-around sticky top-0 bg-gray-600 w-full flex-wrap">
+    <div className="min-h-screen relative">
+      <nav className="text-white p-4 flex justify-around sticky top-0 bg-gray-800 w-full flex-wrap">
         <div className="left w-1/2">
-
-
+          <p className="text-red-600 font-semibold">LUNDREGAN</p>
+          <p className="pl-2 text-xs">Next Generation Developer</p>
         </div>
         <div className="right w-1/2 flex text-right sm:justify-around flex-col sm:flex-row">
           <Link href="/" className="mx-2">
