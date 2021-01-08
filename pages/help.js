@@ -1,8 +1,10 @@
 import Head from 'next/head'
+import Layout from '../components/layout'
 import "tailwindcss/tailwind.css"
 
 export default function Home() {
   return (
+    <Layout>
     <div className="container">
       <Head>
         <title>Create Next App</title>
@@ -48,19 +50,6 @@ export default function Home() {
           </a>
         </div>
       </main>
-
-      <footer>
-        {/* <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a> */}
-
-        © 2021 Ethan Lundregan - <a href="https://github.com/lundregan/Portfolio" target="_blank">Source Code</a>
-      </footer>
 
       <style jsx>{`
         .container {
@@ -208,5 +197,6 @@ export default function Home() {
         }
       `}</style>
     </div>
+    </Layout>
   )
 }
