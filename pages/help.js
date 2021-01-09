@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Layout from '../components/layout'
 import "tailwindcss/tailwind.css"
 
-export default function Home() {
+export default function Home() { 
   return (
     <Layout>
     <div className="container">
