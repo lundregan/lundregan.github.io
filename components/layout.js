@@ -9,13 +9,14 @@ export default function Layout({ children, home }) {
   return (
     <div
       className="
-        min-h-screen relative 
+        h-screen relative 
         bg-gray-200 dark:bg-gray-900
         text-black dark:text-white
+        flex flex-col
       "
     >
       <Nav></Nav>
-      <main className="flex justify-center px-16 bg-gray-200 dark:bg-gray-900">{children}</main>
+      <main className="flex justify-center px-16 bg-gray-200 dark:bg-gray-900 h-full">{children}</main>
       <Footer></Footer>
     </div>
   )
