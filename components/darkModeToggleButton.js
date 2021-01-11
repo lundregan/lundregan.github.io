@@ -35,7 +35,7 @@ export default DarkModeToggleButton => {
       onChange={changeTheme}
       checked={isDarkMode}
       size={50}
-      className="mx-8"
+      className="mx-8 mt-2"
     />
   );
 };
