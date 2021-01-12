@@ -8,10 +8,12 @@ export default Nav => {
     return (
       <nav className="text-blue-600 dark:text-purple-600 p-2 flex justify-around sticky top-0 bg-gray-100 dark:bg-gray-800 w-full flex-wrap shadow-md">
         <div className="left w-1/2 flex flex-wrap font-serif">
-          <div>
-            <p className="text-blue-600 dark:text-purple-600 font-semibold text-2xl">LUNDREGAN</p>
-            <p className="text-gray-800 dark:text-gray-200 pl-2 text-xs font-mono">Next Generation Developer</p>
-          </div>
+            <Link href="/">
+              <div className="cursor-pointer">
+                <p className="text-blue-600 dark:text-purple-600 font-semibold text-2xl">LUNDREGAN</p>
+                <p className="text-gray-800 dark:text-gray-200 pl-2 text-xs font-mono">Next Generation Developer</p>
+              </div>
+            </Link>
           <DarkModeToggleButton></DarkModeToggleButton>
         </div>
 
