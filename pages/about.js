@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Layout from '../components/layout'
 import "tailwindcss/tailwind.css"
 import Link from 'next/link'
+import { render } from 'react-dom'
+import Skillset from '../components/skillset'
 
 export default function Home() {
   return (
@@ -33,6 +35,9 @@ export default function Home() {
           </p>
         </div>
 
+        <div>
+          <Skillset></Skillset>
+        </div>
         {/* <div className="shadow m-8 p-2">
           <h1 className="text-center text-2xl dark:text-purple-500">My Skillset</h1>
           <div>
