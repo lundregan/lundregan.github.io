@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 export default Nav => {
     return (
-      <nav className="text-blue-600 dark:text-purple-600 p-2 flex justify-around sticky top-0 bg-gray-100 dark:bg-gray-800 w-full flex-wrap shadow-md">
+      <nav className="text-blue-700 dark:text-white p-2 flex justify-around sticky top-0 w-full flex-wrap">
         <div className="left w-1/2 flex flex-wrap">
             <Link href="/">
                 <p className="text-blue-600 dark:text-white font-semibold text-3xl font-mono cursor-pointer">Lundregan</p>
@@ -14,21 +14,21 @@ export default Nav => {
           <DarkModeToggleButton></DarkModeToggleButton>
         </div>
 
-        <div className="right w-1/2 flex text-right text-xl sm:justify-around flex-col sm:flex-row font-medium">
+        <div className="right w-1/3 flex text-right text-md sm:justify-around flex-col sm:flex-row">
           <Link href="/" className="mx-2">
-            <a>Home</a>
+            <a className="hover:text-black dark:hover:text-purple-500">Home</a>
           </Link>
           <Link href="/about" className="mx-2">
-            <a>About</a>
+            <a className="hover:text-black dark:hover:text-purple-500">About</a>
           </Link>
           <Link href="/projects" className="mx-2">
-            <a>Projects</a>
+            <a className="hover:text-black dark:hover:text-purple-500">Projects</a>
           </Link>
           <Link href="/blog" className="mx-2">
-            <a>Blog</a>
+            <a className="hover:text-black dark:hover:text-purple-500">Blog</a>
           </Link>
           <Link href="/contact" className="mx-2">
-            <a>Contact</a>
+            <a className="hover:text-black dark:hover:text-purple-500">Contact</a>
           </Link>
         </div>
       </nav>
