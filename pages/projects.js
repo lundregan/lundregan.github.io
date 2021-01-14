@@ -20,7 +20,7 @@ export default function Home() {
           height={281}
         ></Image>
         <div className="flex flex-col justify-between py-2 pl-4">
-          <h1 className="text-2xl dark:text-purple-500">Old Portfolio</h1>
+          <h1 className="text-2xl text-blue-700 dark:text-purple-500">Old Portfolio</h1>
 
           <p>Portfolio project to host my websites on. showcasing my knowlkedge and skillset</p>
 
@@ -36,7 +36,7 @@ export default function Home() {
           height={281}
         ></Image>
         <div className="flex flex-col justify-between py-2 pl-4">
-          <h1 className="text-2xl dark:text-purple-500">Hexoggle</h1>
+          <h1 className="text-2xl text-blue-700 dark:text-purple-500">Hexoggle</h1>
 
           <p>Hex based puzzle tile games, where you toggle tiles to complete the level.</p>
 
@@ -52,7 +52,7 @@ export default function Home() {
           height={281}
         ></Image>
         <div className="flex flex-col justify-between py-2 pl-4">
-          <h1 className="text-2xl dark:text-purple-500">Desmos Corp</h1>
+          <h1 className="text-2xl text-blue-700 dark:text-purple-500">Desmos Corp</h1>
 
           <p>Mock video game company website</p>
 
