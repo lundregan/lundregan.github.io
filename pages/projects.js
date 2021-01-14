@@ -15,7 +15,7 @@ export default function Home() {
       <div className="flex">
         <Image
           src='/project-imgs/lundregan.png'
-          alt="Picture of the author"
+          alt="Portfolio website"
           width={500}
           height={281}
         ></Image>
@@ -23,6 +23,38 @@ export default function Home() {
           <h1 className="text-2xl dark:text-purple-500">Old Portfolio</h1>
 
           <p>Portfolio project to host my websites on. showcasing my knowlkedge and skillset</p>
+
+          <p>Nuxt | Tailwind | Sass</p>
+        </div>
+      </div>
+
+      <div className="flex">
+        <Image
+          src='/project-imgs/hexoggle.png'
+          alt="Portfolio website"
+          width={500}
+          height={281}
+        ></Image>
+        <div className="flex flex-col justify-between py-2 pl-4">
+          <h1 className="text-2xl dark:text-purple-500">Hexoggle</h1>
+
+          <p>Hex based puzzle tile games, where you toggle tiles to complete the level.</p>
+
+          <p>Vue</p>
+        </div>
+      </div>
+
+      <div className="flex">
+        <Image
+          src='/project-imgs/desmoscorp.png'
+          alt="Website for mock video game company"
+          width={500}
+          height={281}
+        ></Image>
+        <div className="flex flex-col justify-between py-2 pl-4">
+          <h1 className="text-2xl dark:text-purple-500">Desmos Corp</h1>
+
+          <p>Mock video game company website</p>
 
           <p>HTML | CSS | JS | VUE | VUEX</p>
         </div>
