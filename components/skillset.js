@@ -5,9 +5,9 @@ import { SiTypescript, SiNuxtDotJs, SiFirebase } from 'react-icons/si'
 
 export default function Skillset() {
   return (
-    <div>
-      <div>
-        <p className="text-center">
+    <div className="flex justify-center">
+      <div className="flex flex-col justify-between items-center bg-gray-800 rounded-md w-64 mx-4 py-2">
+        <p>
           Styling
         </p>
         <div className="flex flex-wrap justify-around">
@@ -17,12 +17,12 @@ export default function Skillset() {
         </div>
       </div>
 
-      <div className="mt-16">
-        <p className="text-center">
+      <div className="flex flex-col justify-between items-center bg-gray-800 rounded-md w-64 mx-4 py-2">
+        <p>
           Scripting
         </p>
 
-        <div className="flex flex-wrap justify-around">
+        <div className="flex flex-wrap justify-around items-around w-32 mt-8">
           <SiTypescript className="text-blue-500 text-6xl"></SiTypescript>
           <FaVuejs className="text-green-600 text-6xl"></FaVuejs>
           <SiNuxtDotJs className="text-green-700 text-6xl"></SiNuxtDotJs>
@@ -30,8 +30,8 @@ export default function Skillset() {
         </div>
       </div>
 
-      <div className="mt-16">
-        <p className="text-center">
+      <div className="flex flex-col justify-between items-center bg-gray-800 rounded-md w-64 mx-4 py-2">
+        <p>
           Other
         </p>
 
