@@ -56,7 +56,7 @@ export default function Home() {
 
           <p>Mock video game company website</p>
 
-          <p>HTML | CSS | JS | VUE | VUEX</p>
+          <p>HTML | CSS | JS | Nuxt</p>
         </div>
       </div>
 
