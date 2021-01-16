@@ -6,7 +6,7 @@ import { SiTypescript, SiNuxtDotJs, SiFirebase } from 'react-icons/si'
 export default function Skillset() {
   return (
     <div className="flex justify-center">
-      <div className="flex flex-col justify-between items-center bg-gray-800 rounded-md w-64 mx-4 py-2">
+      <div className="flex flex-col justify-between items-center bg-gray-100 dark:bg-gray-800 rounded-md w-64 mx-4 py-2">
         <p>
           Styling
         </p>
@@ -17,7 +17,7 @@ export default function Skillset() {
         </div>
       </div>
 
-      <div className="flex flex-col justify-between items-center bg-gray-800 rounded-md w-64 mx-4 py-2">
+      <div className="flex flex-col justify-between items-center bg-gray-100 dark:bg-gray-800 rounded-md w-64 mx-4 py-2">
         <p>
           Scripting
         </p>
@@ -30,7 +30,7 @@ export default function Skillset() {
         </div>
       </div>
 
-      <div className="flex flex-col justify-between items-center bg-gray-800 rounded-md w-64 mx-4 py-2">
+      <div className="flex flex-col justify-between items-center bg-gray-100 dark:bg-gray-800 rounded-md w-64 mx-4 py-2">
         <p>
           Other
         </p>
