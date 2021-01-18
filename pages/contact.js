@@ -38,14 +38,14 @@ export default function Home() {
       <Available></Available>
       
 
-      <div>
-        <div className="flex">
+      <div className="flex flex-col max-w-full">
+        <div className="flex flex-wrap">
           <div className="flex flex-col my-2 pr-2">
             <label>Name</label>
             <input className="rounded-xl p-2 text-black" type='text' value={name} onChange={handleChangeName}></input>
           </div>
 
-          <div className="flex flex-col my-2 pl-2">
+          <div className="flex flex-col my-2">
             <label>Email</label>
             <input className="rounded-xl p-2 text-black" type='text' value={email} onChange={handleChangeEmail}></input>
           </div>
