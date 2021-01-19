@@ -14,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div>
+      <div className="flex flex-col items-center">
         <div className="shadow-md m-8 p-2 rounded">
           <h1 className="text-center text-4xl dark:text-purple-500 mb-8">About Me</h1>
 
@@ -33,6 +33,10 @@ export default function Home() {
           If you have any questions or inquires,
           Send me a message, I'd love to hear from you.
           </p>
+
+          <Link href="/contact">
+            <button className="p-2 mt-8 bg-blue-500 hover:bg-blue-700 dark:bg-purple-500 dark:hover:bg-purple-700 text-white rounded shadow-md mx-2">Get In Touch</button>
+          </Link>
         </div>
 
         <div>
